@@ -92,14 +92,9 @@
         !important;
 }
 
-.modeSelected__2ea32 .link__2ea32,
-.modeSelected__2ea32 .name__2ea32 {
-    color:
-        var(--tokyo-midnight-channel-active)
-        !important;
-
-    background:
-        rgba(143,255,209,.08) !important;
+.modeSelected__2ea32, link__2ea32:before {
+    color: var(--tokyo-midnight-channel-active) !important;
+    background: rgba(6, 239, 142, 0.08) !important;
 }
 
 /* ========================== */
