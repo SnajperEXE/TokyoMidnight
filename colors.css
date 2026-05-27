@@ -1,3 +1,46 @@
+:root {
+
+  /* === CORE ATMOSPHERE === */
+
+  --tokyo-midnight-bg-main: linear-gradient(90deg,rgba(18, 18, 18, 1) 0%, rgb(13, 15, 20) 100%);
+  --tokyo-midnight-bg-sidebars: #070907;
+
+  /* === TEXT === */
+
+  --tokyo-midnight-text-normal: #a5ffa2;
+  --tokyo-midnight-text-header: #f2f7ff;
+  --tokyo-midnight-yt-link-text: #ff0000;
+
+  /* === CHANNELS === */
+
+--tokyo-midnight-channel-text: #9dffb1;
+--tokyo-midnight-channel-text-hover: #6fff91;
+--tokyo-midnight-channel-active: #36ea69e0;
+--tokyo-midnight-category-text: #60ff78;
+
+  /* === ICONS === */
+
+  --tokyo-midnight-icons: #afffb1;
+  --tokyo-midnight-icons-2: #8fffd1;
+
+  /* === ACCENTS === */
+
+  --tokyo-midnight-main: #8fffd1;
+  --tokyo-midnight-main2: #b8ffe7;
+
+  /* === BORDERS === */
+
+  --tokyo-midnight-border:rgba(129, 252, 166, 0.926);
+  --tokyo-midnight-border-strong:#26ae7597;
+
+  /* === SHADOWS === */
+
+  --tokyo-midnight-text-shadow: 0 0 8px rgba(146, 255, 161, 0.537);
+  --tokyo-midnight-shadow-glow: 0 0 18px #8fffb46c;
+  --tokyo-midnight-link-shadow: 0 0 15px rgba(244, 11, 22, 0.703);
+
+}
+
 /* ========================== */
 /* GLOBAL BACKGROUNDS */
 /* ========================== */
