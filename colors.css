@@ -1,0 +1,233 @@
+/* ========================== */
+/* GLOBAL BACKGROUNDS */
+/* ========================== */
+
+[class*="members_"],
+[class*="messagesWrapper_"],
+[class*="form_"],
+[class*="formWithLoadedChatInput_"],
+#channels,
+.appMount__51fd7,
+.bg__960e4,
+.directoryContainer_da3f59,
+.sidebar__5e434:after,
+[data-has-banner] {
+    background: var(--tokyo-midnight-bg-main) !important;
+}
+
+/* ========================== */
+/* TEXT */
+/* ========================== */
+
+[class*="slateTextArea_"],
+.public-DraftEditorPlaceholder-inner,
+.public-DraftEditor-content,
+.cooldownText_b21699 {
+    color: var(--tokyo-midnight-text-normal) !important;
+}
+
+[class*="textAreaSlate_"],
+[class*="placeholder_"][class*="slateTextArea_"] {
+    text-shadow:
+        var(--tokyo-midnight-text-shadow) !important;
+}
+
+/* ========================== */
+/* CHANNELS */
+/* ========================== */
+
+.icon__2ea32,
+.name__2ea32 {
+    color:
+        var(--tokyo-midnight-channel-text) !important;
+}
+
+.wrapper__2ea32:hover .link__2ea32,
+.wrapper__2ea32:hover .name__2ea32 {
+    color:
+        var(--tokyo-midnight-channel-text-hover)
+        !important;
+}
+
+.modeSelected__2ea32 .link__2ea32,
+.modeSelected__2ea32 .name__2ea32 {
+    color:
+        var(--tokyo-midnight-channel-active)
+        !important;
+
+    background:
+        rgba(143,255,209,.08) !important;
+}
+
+/* ========================== */
+/* MENTIONS */
+/* ========================== */
+
+[class*="mentioned_"] {
+    background-color:
+        #1cff5532 !important;
+
+    border:
+        1px solid
+        var(--tokyo-midnight-border);
+}
+
+[class*="mentioned_"]:hover {
+    background-color:
+        #00ff5541 !important;
+
+    border:
+        1px solid
+        var(--tokyo-midnight-border-strong);
+}
+
+[class*="mentioned_"]::before {
+    background-color:
+        #2ed568 !important;
+}
+
+/* ========================== */
+/* SERVER HEADER */
+/* ========================== */
+
+[data-has-banner]
+[aria-label*="server actions"] {
+
+    border:
+        1px solid
+        var(--tokyo-midnight-border);
+}
+
+[data-has-banner]
+[aria-label*="server actions"]
+.name_f37cb1 {
+
+    color:
+        var(--tokyo-midnight-category-text)
+        !important;
+
+    text-shadow:
+        var(--tokyo-midnight-text-shadow);
+}
+
+[data-has-banner]
+[aria-label*="server actions"]
+.headerChildren_f37cb1 svg {
+
+    color:
+        var(--tokyo-midnight-text-normal)
+        !important;
+
+    filter:
+        drop-shadow(
+            var(--tokyo-midnight-text-shadow)
+        );
+}
+
+/* ========================== */
+/* MEMBER PANEL */
+/* ========================== */
+
+[class*="membersWrap_"] {
+    border-left:
+        1px solid
+        var(--tokyo-midnight-border-strong);
+
+    background:
+        var(--tokyo-midnight-bg-main);
+}
+
+[class*="membersWrap_"] [class*="members_"] {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(18, 18, 18, 0.85) 0%,
+            rgba(0, 0, 17, 0.9) 100%
+        ) !important;
+
+    backdrop-filter:
+        blur(12px) !important;
+}
+
+/* ========================== */
+/* SEARCH */
+/* ========================== */
+
+[class*=searchBar_] {
+    border:
+        2px solid
+        var(--tokyo-midnight-border);
+}
+
+/* ========================== */
+/* SLOWMODE */
+/* ========================== */
+
+.chatGradientBase__36d07 {
+
+    background:
+        linear-gradient(
+            to top,
+            #07e2576a,
+            #08e03b2a,
+            transparent
+        ) !important;
+
+    backdrop-filter:
+        blur(1px) !important;
+}
+
+/* ========================== */
+/* EMBEDS */
+/* ========================== */
+
+.embedFull__623de {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3, 160, 61, 0.208),
+            #016b282d
+        ) !important;
+
+    border:
+        2px solid #07e22f3c !important;
+
+    backdrop-filter:
+        blur(1px) !important;
+}
+
+/* ========================== */
+/* NEW MESSAGE BAR */
+/* ========================== */
+
+[class*="newMessagesBar"] {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3, 160, 61, 0.503),
+            rgba(1, 107, 40, 0.437)
+        ) !important;
+
+    border:
+        2px solid #07e2573c !important;
+
+    backdrop-filter:
+        blur(1px) !important;
+}
+
+/* ========================== */
+/* HEADER ICONS */
+/* ========================== */
+
+[aria-label="Threads"] svg,
+[aria-label="Pinned Messages"] svg,
+[aria-label="Notification Settings"] svg,
+svg[aria-label="Search"] {
+
+    color:
+        var(--tokyo-midnight-icons)
+        !important;
+}
