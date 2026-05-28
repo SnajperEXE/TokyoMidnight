@@ -41,22 +41,7 @@
 
 }
 
-/* ========================== */
-/* GLOBAL BACKGROUNDS */
-/* ========================== */
 
-[class*="members_"],
-[class*="messagesWrapper_"],
-[class*="form_"],
-[class*="formWithLoadedChatInput_"],
-#channels,
-.appMount__51fd7,
-.bg__960e4,
-.directoryContainer_da3f59,
-.sidebar__5e434:after,
-[data-has-banner] {
-    background: var(--tokyo-midnight-bg-main) !important;
-}
 
 /* ========================== */
 /* TEXT */
