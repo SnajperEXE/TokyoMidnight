@@ -236,8 +236,8 @@
 
 /* 1. World of Warcraft */
 .card_e1364f:has([aria-label*="World of Warcraft"]) .clickableText_e1364f {
-    color: #F5D142 !important;
-    text-shadow: 0 0 6px rgba(245, 209, 66, 0.4) !important;
+    color: #3a30ff !important;
+    text-shadow: 0 0 6px rgba(84, 66, 245, 0.4) !important;
     font-weight: 700 !important;
 }
 
