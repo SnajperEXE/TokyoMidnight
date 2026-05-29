@@ -1,0 +1,166 @@
+
+/* @name TokyoMidnight MemberList
+* @author SnajperEXE
+* @version 1.0.0
+* @description Smart smooth collapsing member list addon for TokyoMidnight. */
+
+
+/* SETTINGS */
+
+:root {
+
+```
+--tokyo-memberlist-enabled: 1; /* change it to --tokyo-memberlist-enabled: 0; if you want to disable it and have normal, default member list */
+
+--tokyo-memberlist-collapsed-width: 68px;
+--tokyo-memberlist-expanded-width: 240px;
+
+--tokyo-memberlist-transition: .24s ease;
+
+--tokyo-memberlist-hover-shadow:
+    0 0 18px rgba(129,252,166,.08);
+
+--tokyo-memberlist-bg:
+    rgba(8, 10, 14, .82);
+```
+
+}
+
+/* ========================== */
+/* MEMBER LIST BASE */
+/* ========================== */
+
+.membersWrap_c8ffbb {
+
+```
+width:
+    calc(
+        (var(--tokyo-memberlist-collapsed-width) * var(--tokyo-memberlist-enabled)) +
+        (240px * (1 - var(--tokyo-memberlist-enabled)))
+    ) !important;
+
+min-width:
+    calc(
+        (var(--tokyo-memberlist-collapsed-width) * var(--tokyo-memberlist-enabled)) +
+        (240px * (1 - var(--tokyo-memberlist-enabled)))
+    ) !important;
+
+transition:
+    width var(--tokyo-memberlist-transition),
+    min-width var(--tokyo-memberlist-transition),
+    background-color .2s ease,
+    box-shadow .2s ease;
+
+overflow:
+    hidden;
+
+background:
+    var(--tokyo-memberlist-bg);
+
+backdrop-filter:
+    blur(10px);
+```
+
+}
+
+/* ========================== */
+/* EXPAND ON HOVER */
+/* ========================== */
+
+.membersWrap_c8ffbb:hover {
+
+```
+width:
+    calc(
+        (var(--tokyo-memberlist-expanded-width) * var(--tokyo-memberlist-enabled)) +
+        (240px * (1 - var(--tokyo-memberlist-enabled)))
+    ) !important;
+
+min-width:
+    calc(
+        (var(--tokyo-memberlist-expanded-width) * var(--tokyo-memberlist-enabled)) +
+        (240px * (1 - var(--tokyo-memberlist-enabled)))
+    ) !important;
+
+box-shadow:
+    var(--tokyo-memberlist-hover-shadow);
+```
+
+}
+
+/* ========================== */
+/* HIDE USERNAMES */
+/* ========================== */
+
+.membersWrap_c8ffbb:not(:hover)
+[class*="memberInner"] {
+
+```
+opacity:
+    calc(1 - var(--tokyo-memberlist-enabled));
+
+transition:
+    opacity .12s ease;
+```
+
+}
+
+/* ========================== */
+/* SHOW USERNAMES */
+/* ========================== */
+
+.membersWrap_c8ffbb:hover
+[class*="memberInner"] {
+
+```
+opacity:
+    1;
+```
+
+}
+
+/* ========================== */
+/* KEEP AVATARS VISIBLE */
+/* ========================== */
+
+.membersWrap_c8ffbb
+.avatar__44b0c {
+
+```
+opacity:
+    1 !important;
+```
+
+}
+
+/* ========================== */
+/* MEMBER GROUP TITLES */
+/* ========================== */
+
+.membersWrap_c8ffbb:not(:hover)
+[class*="membersGroup"] {
+
+```
+opacity:
+    calc(1 - var(--tokyo-memberlist-enabled));
+
+transition:
+    opacity .12s ease;
+```
+
+}
+
+/* ========================== */
+/* SMOOTHNESS */
+/* ========================== */
+
+.membersWrap_c8ffbb * {
+
+```
+transition:
+    opacity .12s ease,
+    color .12s ease,
+    background-color .12s ease;
+```
+
+}
