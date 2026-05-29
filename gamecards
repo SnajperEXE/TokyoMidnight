@@ -1,0 +1,294 @@
+/* =================================================== */
+/*             GAME CARDS - FAVORITE GAMES            */ 
+/* =================================================== */
+
+/* Final Fantasy XIV */
+.card_e1364f:has([aria-label*="Final Fantasy XIV"]) .clickableText_e1364f {
+    color: #aae2ff !important;
+    text-shadow: 0 0 8px rgba(0, 162, 255, 0.6) !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+/* The Elder Scrolls Online */
+.card_e1364f:has([aria-label*="Elder Scrolls Online"]) .clickableText_e1364f {
+    color: #d1b46a !important;
+    text-shadow: 1px 1px 3px #000 !important;
+    font-family: 'Georgia', serif !important;
+}
+
+/* Guild Wars 2 */
+.card_e1364f:has([aria-label*="Guild Wars 2"]) .clickableText_e1364f {
+    color: #e62129 !important;
+    text-shadow: 0 0 6px rgba(230, 33, 41, 0.4) !important;
+}
+
+/* Path of Exile */
+.card_e1364f:has([aria-label*="Path of Exile"]) .clickableText_e1364f {
+    color: #a3814c !important;
+    text-shadow: 2px 2px 2px #000 !important;
+}
+
+/* Runescape */
+.card_e1364f:has([aria-label*="RuneScape"]) .clickableText_e1364f {
+    color: #ff9a00 !important;
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+/* Genshin Impact */
+.card_e1364f:has([aria-label*="Genshin Impact"]) .clickableText_e1364f {
+    color: #4ce1ff !important;
+    text-shadow: 0 0 8px rgba(76, 225, 255, 0.5) !important;
+}
+
+/* Honkai: Star Rail */
+.card_e1364f:has([aria-label*="Honkai: Star Rail"]) .clickableText_e1364f {
+    color: #c9a0ff !important;
+    text-shadow: 0 0 6px rgba(138, 43, 226, 0.6) !important;
+}
+
+/* The Witcher 3 */
+.card_e1364f:has([aria-label*="Witcher 3"]) .clickableText_e1364f {
+    color: #cfcfcf !important;
+    text-shadow: 1px 1px 4px #7a0000 !important;
+}
+
+/* Baldur's Gate 3 */
+.card_e1364f:has([aria-label*="Baldur's Gate 3"]) .clickableText_e1364f {
+    color: #bf8eff !important;
+    text-shadow: 0 0 5px #000 !important;
+    font-family: 'Times New Roman', serif !important;
+}
+
+/* Counter-Strike 2 / CS:GO */
+.card_e1364f:has([aria-label*="Counter-Strike"]) .clickableText_e1364f {
+    color: #de9b35 !important;
+    text-shadow: 2px 2px 0px #1c262f !important;
+    font-weight: 800 !important;
+}
+
+/* Overwatch 2 */
+.card_e1364f:has([aria-label*="Overwatch"]) .clickableText_e1364f {
+    color: #f99e1a !important;
+    text-shadow: 1px 1px 0px #40b4e5 !important;
+    font-style: italic !important;
+}
+
+/* Apex Legends */
+.card_e1364f:has([aria-label*="Apex Legends"]) .clickableText_e1364f {
+    color: #da292a !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* Tom Clancy's Rainbow Six Siege */
+.card_e1364f:has([aria-label*="Rainbow Six Siege"]) .clickableText_e1364f {
+    color: #ffffff !important;
+    text-shadow: -2px 2px 0px #1a3044 !important;
+    font-weight: 700 !important;
+}
+
+/* Call of Duty */
+.card_e1364f:has([aria-label*="Call of Duty"]) .clickableText_e1364f {
+    color: #a4ce3a !important;
+    text-shadow: 1px 1px 2px #000 !important;
+    font-family: 'Impact', sans-serif !important;
+}
+
+/* Destiny 2 */
+.card_e1364f:has([aria-label*="Destiny 2"]) .clickableText_e1364f {
+    color: #f5f5f5 !important;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.4) !important;
+    letter-spacing: 2px !important;
+}
+
+/* Fortnite */
+.card_e1364f:has([aria-label*="Fortnite"]) .clickableText_e1364f {
+    color: #f723ad !important;
+    font-family: 'Impact', sans-serif !important;
+    text-shadow: 2px 2px 0px #00beff !important;
+}
+
+/* Team Fortress 2 */
+.card_e1364f:has([aria-label*="Team Fortress 2"]) .clickableText_e1364f {
+    color: #b86026 !important;
+    text-shadow: 2px 2px 0px #3c352e !important;
+}
+
+/* League of Legends */
+.card_e1364f:has([aria-label*="League of Legends"]) .clickableText_e1364f {
+    color: #c89b3c !important;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8) !important;
+    font-family: 'Georgia', serif !important;
+}
+
+/* Dota 2 */
+.card_e1364f:has([aria-label*="Dota 2"]) .clickableText_e1364f {
+    color: #ed3b26 !important;
+    text-shadow: 1px 1px 3px #000 !important;
+}
+
+/* Teamfight Tactics */
+.card_e1364f:has([aria-label*="Teamfight Tactics"]) .clickableText_e1364f {
+    color: #ffcc66 !important;
+    text-shadow: 0 0 5px rgba(255, 100, 0, 0.4) !important;
+}
+
+/* Hearts of Iron IV */
+.card_e1364f:has([aria-label*="Hearts of Iron"]) .clickableText_e1364f {
+    color: #bfa15f !important;
+    text-shadow: 1px 1px 2px #000 !important;
+    font-weight: 700 !important;
+}
+
+/* Stellaris */
+.card_e1364f:has([aria-label*="Stellaris"]) .clickableText_e1364f {
+    color: #26e6e6 !important;
+    text-shadow: 0 0 8px rgba(38, 230, 230, 0.5) !important;
+}
+
+/* Rocket League */
+.card_e1364f:has([aria-label*="Rocket League"]) .clickableText_e1364f {
+    color: #0099ff !important;
+    text-shadow: 2px 2px 0px #ff6600 !important;
+    font-style: italic !important;
+}
+
+/* The Sims 4 */
+.card_e1364f:has([aria-label*="The Sims"]) .clickableText_e1364f {
+    color: #21ca12 !important;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Terraria */
+.card_e1364f:has([aria-label*="Terraria"]) .clickableText_e1364f {
+    color: #3cb03c !important;
+    text-shadow: 2px 2px 0px #5c3c24 !important;
+}
+
+/* Rust */
+.card_e1364f:has([aria-label*="Rust"]) .clickableText_e1364f {
+    color: #cd412b !important;
+    font-family: 'Impact', sans-serif !important;
+}
+
+/* Helldivers 2 */
+.card_e1364f:has([aria-label*="Helldivers 2"]) .clickableText_e1364f {
+    color: #ffe600 !important;
+    text-shadow: 2px 2px 0px #000000 !important;
+    letter-spacing: 1px !important;
+}
+
+/* Ark: Survival Ascended / Evolved */
+.card_e1364f:has([aria-label*="Ark: Survival"]) .clickableText_e1364f {
+    color: #00ffcc !important;
+    text-shadow: 0 0 6px rgba(0, 255, 204, 0.5) !important;
+}
+
+/* Lethal Company */
+.card_e1364f:has([aria-label*="Lethal Company"]) .clickableText_e1364f {
+    color: #ff6600 !important;
+    text-shadow: 2px 2px 0px #110000 !important;
+    font-family: monospace !important;
+}
+
+/* Stardew Valley */
+.card_e1364f:has([aria-label*="Stardew Valley"]) .clickableText_e1364f {
+    color: #ff6b8b !important;
+    text-shadow: 2px 2px 0px #ffeb7a !important;
+}
+
+/* Sea of Thieves */
+.card_e1364f:has([aria-label*="Sea of Thieves"]) .clickableText_e1364f {
+    color: #1fe0a0 !important;
+    text-shadow: 0 0 8px rgba(31, 224, 160, 0.4) !important;
+}
+
+/* Dead by Daylight */
+.card_e1364f:has([aria-label*="Dead by Daylight"]) .clickableText_e1364f {
+    color: #ff4500 !important;
+    text-shadow: 1px 1px 5px #000000 !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* Nintendo Switch */
+.card_e1364f:has([aria-label*="Nintendo"]) .clickableText_e1364f {
+    color: #e60012 !important;
+    font-weight: 800 !important;
+}
+
+/* PlayStation Games */
+.card_e1364f:has([aria-label*="PlayStation"]) .clickableText_e1364f {
+    color: #003087 !important;
+    text-shadow: 0 0 4px #0072ce !important;
+}
+
+/* Xbox Games */
+.card_e1364f:has([aria-label*="Xbox"]) .clickableText_e1364f {
+    color: #107c10 !important;
+    text-shadow: 0 0 3px #000 !important;
+}
+
+/* Steam / General PC Gaming */
+.card_e1364f:has([aria-label*="Steam"]) .clickableText_e1364f {
+    color: #171a21 !important;
+    text-shadow: 0 0 4px #66c0f4 !important;
+}
+
+/* 1. World of Warcraft */
+.card_e1364f:has([aria-label*="World of Warcraft"]) .clickableText_e1364f {
+    color: #F5D142 !important;
+    text-shadow: 0 0 6px rgba(245, 209, 66, 0.4) !important;
+    font-weight: 700 !important;
+}
+
+/* 2. Cyberpunk */
+.card_e1364f:has([aria-label*="Cyberpunk"]) .clickableText_e1364f {
+    color: #F3E600 !important;
+    text-shadow: 2px 2px 0px #00F0FF !important;
+    font-weight: 700 !important;
+}
+
+/* Diablo II */
+.card_e1364f:has([aria-label*="Diablo II"]) .clickableText_e1364f,
+.card_e1364f:has([aria-label*="Diablo 2"]) .clickableText_e1364f {
+    color: #800000 !important; /* Deeper, darker blood tone */
+    text-shadow: 0px 0px 4px #000000, 0px 0px 8px #4a0000 !important;
+    font-family: 'Cinzel', 'Georgia', serif !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
+}
+
+/* Diablo III */
+.card_e1364f:has([aria-label*="Diablo III"]) .clickableText_e1364f,
+.card_e1364f:has([aria-label*="Diablo 3"]) .clickableText_e1364f {
+    color: #d95d00 !important; /* Smoldering ember hue */
+    text-shadow: 0px 0px 6px rgba(217, 93, 0, 0.5) !important;
+    font-family: 'Cinzel', 'Georgia', serif !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
+}
+
+/* Diablo IV */
+.card_e1364f:has([aria-label*="Diablo IV"]) .clickableText_e1364f,
+.card_e1364f:has([aria-label*="Diablo 4"]) .clickableText_e1364f {
+    color: #a60000 !important; /* Pure sinister gothic red */
+    text-shadow: 1px 1px 2px #000000, 0px 0px 5px rgba(0, 0, 0, 0.8) !important;
+    font-family: 'Cinzel', 'Georgia', serif !important;
+    letter-spacing: 1.5px !important;
+    font-weight: 800 !important;
+}
+
+/* Diablo Immortal */
+.card_e1364f:has([aria-label*="Diablo Immortal"]) .clickableText_e1364f {
+    color: #b52b50 !important; /* Magenta-tinted corruption red */
+    text-shadow: 0px 0px 6px rgba(114, 12, 46, 0.6) !important;
+    font-family: 'Cinzel', 'Georgia', serif !important;
+    letter-spacing: 1px !important;
+}
+
+/* UNIVERSAL FALLBACK */
+.card_e1364f .clickableText_e1364f {
+    color: #07e22f !important;
+    text-shadow: 0 0 5px rgba(7, 226, 47, 0.25) !important;
+    font-weight: 600 !important;
+}
