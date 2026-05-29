@@ -1,0 +1,17 @@
+/* === TOKYOMIDNIGHT SETTINGS === */
+
+:root {
+
+    /* === ADDONS === */
+
+    --tokyo-memberlist-enabled: 1;
+    --tokyo-gamecards-enabled: 1;
+
+    /* === WIDTHS === */
+
+    --tokyo-memberlist-expanded-width: 240px;
+
+    /* === SPEED === */
+
+    --tokyo-transition-fast: .18s ease;
+}
