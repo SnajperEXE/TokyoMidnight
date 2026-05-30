@@ -17,150 +17,85 @@
 
 --tokyo-memberlist-transition: .24s ease;
 
---tokyo-memberlist-hover-shadow:
-    0 0 18px rgba(129,252,166,.08);
+--tokyo-memberlist-hover-shadow: 0 0 18px rgba(129,252,166,.08);
 
---tokyo-memberlist-bg:
-    rgba(8, 10, 14, .82);
+--tokyo-memberlist-bg: rgba(8, 10, 14, .82);
 ```
 
 }
 
 /* ========================== */
-/* MEMBER LIST BASE */
+/*        MEMBER LIST         */
 /* ========================== */
 
-.membersWrap_c8ffbb {
+[class*="membersWrap_"] {
 
-```
-width:
-    calc(
-        (var(--tokyo-memberlist-collapsed-width) * var(--tokyo-memberlist-enabled)) +
-        (240px * (1 - var(--tokyo-memberlist-enabled)))
-    ) !important;
-
-min-width:
-    calc(
-        (var(--tokyo-memberlist-collapsed-width) * var(--tokyo-memberlist-enabled)) +
-        (240px * (1 - var(--tokyo-memberlist-enabled)))
-    ) !important;
-
-transition:
-    width var(--tokyo-memberlist-transition),
-    min-width var(--tokyo-memberlist-transition),
-    background-color .2s ease,
-    box-shadow .2s ease;
-
-overflow:
-    hidden;
-
-background:
-    var(--tokyo-memberlist-bg);
-
-backdrop-filter:
-    blur(10px);
-```
-
+    width: 0px !important;
+    min-width: 0px !important;
+    max-width: 0px !important;
+    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), min-width 0.3s cubic-bezier(0.25, 1, 0.5, 1), max-width 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    position: relative;
 }
 
-/* ========================== */
-/* EXPAND ON HOVER */
-/* ========================== */
+/* INVISIBLE SENSOR */
 
-.membersWrap_c8ffbb:hover {
+[class*="membersWrap_"]::after {
 
-```
-width:
-    calc(
-        (var(--tokyo-memberlist-expanded-width) * var(--tokyo-memberlist-enabled)) +
-        (240px * (1 - var(--tokyo-memberlist-enabled)))
-    ) !important;
-
-min-width:
-    calc(
-        (var(--tokyo-memberlist-expanded-width) * var(--tokyo-memberlist-enabled)) +
-        (240px * (1 - var(--tokyo-memberlist-enabled)))
-    ) !important;
-
-box-shadow:
-    var(--tokyo-memberlist-hover-shadow);
-```
-
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: 999;
+    pointer-events: all;
 }
 
-/* ========================== */
-/* HIDE USERNAMES */
-/* ========================== */
+/* PANEL EXPANSION */
 
-.membersWrap_c8ffbb:not(:hover)
-[class*="memberInner"] {
 
-```
-opacity:
-    calc(1 - var(--tokyo-memberlist-enabled));
+[class*="membersWrap_"]:hover,
+[class*="membersWrap_"]:active {
 
-transition:
-    opacity .12s ease;
-```
-
+    width: 240px !important;
+    min-width: 240px !important;
+    max-width: 240px !important;
 }
 
-/* ========================== */
-/* SHOW USERNAMES */
-/* ========================== */
+/*      MEMBERS PANEL         */
 
-.membersWrap_c8ffbb:hover
-[class*="memberInner"] {
+[class*="membersWrap_"] [class*="members_"] {
 
-```
-opacity:
-    1;
-```
-
+    width: 240px !important;
+    background-color: var(--tokyo-midnight-bg-main) !important;
+    border-left: 2px solid hsla(138, 95%, 75%, 0.12);
+    box-shadow: -4px 0 12px rgba(129,252,166,.05);
+    transition: border-color .22s ease, box-shadow .22s ease, background-color .22s ease;
 }
 
-/* ========================== */
-/* KEEP AVATARS VISIBLE */
-/* ========================== */
+/* OPENED PANEL */
 
-.membersWrap_c8ffbb
-.avatar__44b0c {
+[class*="membersWrap_"]:hover [class*="members_"],
+[class*="membersWrap_"]:active [class*="members_"] {
 
-```
-opacity:
-    1 !important;
-```
-
+    border-left: 2px solid transparent;
+    box-shadow: none;
 }
 
-/* ========================== */
-/* MEMBER GROUP TITLES */
-/* ========================== */
+/* MEMBER APPEAR ANIMATION */
 
-.membersWrap_c8ffbb:not(:hover)
-[class*="membersGroup"] {
+[class*="membersWrap_"] [class*="member_"] {
 
-```
-opacity:
-    calc(1 - var(--tokyo-memberlist-enabled));
-
-transition:
-    opacity .12s ease;
-```
-
+    opacity: 0;
+    transform:translateY(5px);
+    transition:opacity .2s ease, transform .2s ease !important;
 }
 
-/* ========================== */
-/* SMOOTHNESS */
-/* ========================== */
+/* MEMBERS VISIBLE */
 
-.membersWrap_c8ffbb * {
+[class*="membersWrap_"]:hover [class*="member_"],
+[class*="membersWrap_"]:active [class*="member_"] {
 
-```
-transition:
-    opacity .12s ease,
-    color .12s ease,
-    background-color .12s ease;
-```
-
+    opacity: 1;
+    transform: translateY(0);
 }
