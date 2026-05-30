@@ -5,32 +5,61 @@
 * @description Smart smooth collapsing member list addon for TokyoMidnight. */
 
 /* ========================== */
-/*        MEMBER LIST         */
+/*        WRAPPER             */
 /* ========================== */
-
-/* WRAPPER */
 
 [class*="membersWrap_"] {
 
     width:
-        var(--tokyo-memberlist-width)
+        calc(
+            var(--tokyo-memberlist-visible-edge)
+            +
+            (
+                (
+                    var(--tokyo-memberlist-width)
+                    -
+                    var(--tokyo-memberlist-visible-edge)
+                )
+                *
+                (1 - var(--tokyo-memberlist-enabled))
+            )
+        )
         !important;
 
     min-width:
-        var(--tokyo-memberlist-width)
+        calc(
+            var(--tokyo-memberlist-visible-edge)
+            +
+            (
+                (
+                    var(--tokyo-memberlist-width)
+                    -
+                    var(--tokyo-memberlist-visible-edge)
+                )
+                *
+                (1 - var(--tokyo-memberlist-enabled))
+            )
+        )
         !important;
 
     max-width:
-        var(--tokyo-memberlist-width)
+        calc(
+            var(--tokyo-memberlist-visible-edge)
+            +
+            (
+                (
+                    var(--tokyo-memberlist-width)
+                    -
+                    var(--tokyo-memberlist-visible-edge)
+                )
+                *
+                (1 - var(--tokyo-memberlist-enabled))
+            )
+        )
         !important;
 
     position: relative;
     overflow: visible;
-
-    transform:
-        translateX(
-            var(--tokyo-memberlist-offset)
-        );
 
     opacity:
         calc(
@@ -38,12 +67,15 @@
         );
 
     transition:
-        transform .32s cubic-bezier(.22, 1, .36, 1),
+        width .32s cubic-bezier(.22, 1, .36, 1),
+        min-width .32s cubic-bezier(.22, 1, .36, 1),
+        max-width .32s cubic-bezier(.22, 1, .36, 1),
         opacity .22s ease !important;
 }
 
-/* INVISIBLE SENSOR */
-
+/* ========================== */
+/*      INVISIBLE SENSOR      */
+/* ========================== */
 
 [class*="membersWrap_"]::after {
 
@@ -68,19 +100,37 @@
     z-index: 999;
 }
 
-/* OPEN PANEL */
-
+/* ========================== */
+/*        OPEN PANEL          */
+/* ========================== */
 
 [class*="membersWrap_"]:hover,
 [class*="membersWrap_"]:active {
 
-    transform: translateX(0);
+    width:
+        var(--tokyo-memberlist-width)
+        !important;
+
+    min-width:
+        var(--tokyo-memberlist-width)
+        !important;
+
+    max-width:
+        var(--tokyo-memberlist-width)
+        !important;
+
     opacity: 1;
 }
 
-/* MEMBERS PANEL */
+/* ========================== */
+/*       MEMBERS PANEL        */
+/* ========================== */
 
 [class*="membersWrap_"] [class*="members_"] {
+
+    width:
+        var(--tokyo-memberlist-width)
+        !important;
 
     background:
         linear-gradient(
@@ -104,7 +154,9 @@
         background-color .22s ease !important;
 }
 
-/* ACTIVE GLOW */
+/* ========================== */
+/*        ACTIVE GLOW         */
+/* ========================== */
 
 [class*="membersWrap_"]:hover [class*="members_"],
 [class*="membersWrap_"]:active [class*="members_"] {
@@ -117,7 +169,9 @@
         -3px 0 16px rgba(120, 255, 170, .08);
 }
 
-/* MEMBER ANIMATION */
+/* ========================== */
+/*      MEMBER ANIMATION      */
+/* ========================== */
 
 [class*="membersWrap_"] [class*="member_"] {
 
@@ -144,7 +198,9 @@
         transform .24s cubic-bezier(.22, 1, .36, 1) !important;
 }
 
-/* MEMBERS VISIBLE */
+/* ========================== */
+/*      MEMBERS VISIBLE       */
+/* ========================== */
 
 [class*="membersWrap_"]:hover [class*="member_"],
 [class*="membersWrap_"]:active [class*="member_"] {
