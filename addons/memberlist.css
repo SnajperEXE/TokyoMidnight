@@ -1,0 +1,140 @@
+
+/* @name TokyoMidnight MemberList
+* @author SnajperEXE
+* @version 1.0.0
+* @description Smart smooth collapsing member list addon for TokyoMidnight. */
+
+
+/* SETTINGS */
+
+:root {
+
+```
+--tokyo-memberlist-enabled: 1; /* change it to --tokyo-memberlist-enabled: 0; if you want to disable it and have normal, default member list */
+
+--tokyo-memberlist-collapsed-width: 68px;
+--tokyo-memberlist-expanded-width: 240px;
+
+--tokyo-memberlist-transition: .24s ease;
+
+--tokyo-memberlist-hover-shadow: 0 0 18px rgba(129,252,166,.08);
+
+--tokyo-memberlist-bg: rgba(8, 10, 14, .82);
+```
+
+}
+
+/* ========================== */
+/*        MEMBER LIST         */
+/* ========================== */
+
+[class*="membersWrap_"] {
+
+    --member-width: 240px;
+
+    width: var(--member-width) !important;
+    min-width: var(--member-width) !important;
+    max-width: var(--member-width) !important;
+
+    position: relative;
+    overflow: visible;
+
+    transform: translateX(calc(var(--member-width) - 18px));
+    opacity: .92;
+
+    transition:
+        transform .32s cubic-bezier(.22, 1, .36, 1),
+        opacity .22s ease;
+}
+
+/* INVISIBLE HOVER SENSOR */
+
+[class*="membersWrap_"]::after {
+
+    content: "";
+
+    position: fixed;
+    top: 0;
+    left: -22px;
+    bottom: 0;
+
+    width: 22px;
+
+    pointer-events: all;
+    z-index: 999;
+}
+
+/* OPEN PANEL */
+
+[class*="membersWrap_"]:hover,
+[class*="membersWrap_"]:active {
+
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*       MEMBER PANEL         */
+
+[class*="membersWrap_"] [class*="members_"] {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(14, 18, 24, .92),
+            rgba(9, 12, 16, .96)
+        ) !important;
+
+    backdrop-filter: blur(14px);
+
+    border-left:
+        1px solid rgba(120, 255, 170, .08);
+
+    box-shadow:
+        -8px 0 24px rgba(0, 0, 0, .28),
+        -2px 0 12px rgba(120, 255, 170, .05);
+
+    transition:
+        border-color .22s ease,
+        box-shadow .22s ease,
+        background-color .22s ease;
+}
+
+/* ACTIVE GLOW */
+
+[class*="membersWrap_"]:hover [class*="members_"],
+[class*="membersWrap_"]:active [class*="members_"] {
+
+    border-left:
+        1px solid rgba(120, 255, 170, .16);
+
+    box-shadow:
+        -12px 0 32px rgba(0, 0, 0, .35),
+        -3px 0 16px rgba(120, 255, 170, .08);
+}
+
+/* ========================== */
+/*      MEMBER ANIMATION      */
+/* ========================== */
+
+[class*="membersWrap_"] [class*="member_"] {
+
+    opacity: 0;
+
+    transform:
+        translateX(10px)
+        scale(.98);
+
+    transition:
+        opacity .18s ease,
+        transform .24s cubic-bezier(.22, 1, .36, 1);
+}
+
+/* MEMBERS VISIBLE */
+
+[class*="membersWrap_"]:hover [class*="member_"],
+[class*="membersWrap_"]:active [class*="member_"] {
+
+    opacity: 1;
+
+    transform: translateX(0) scale(1);
+}
