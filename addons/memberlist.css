@@ -5,8 +5,10 @@
 * @description Smart smooth collapsing member list addon for TokyoMidnight. */
 
 /* ========================== */
-/*        WRAPPER             */
+/*        MEMBER LIST         */
 /* ========================== */
+
+/* WRAPPER */
 
 [class*="membersWrap_"] {
 
@@ -59,7 +61,7 @@
         !important;
 
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 
     opacity:
         calc(
@@ -73,9 +75,7 @@
         opacity .22s ease !important;
 }
 
-/* ========================== */
-/*      INVISIBLE SENSOR      */
-/* ========================== */
+/* INVISIBLE SENSOR */
 
 [class*="membersWrap_"]::after {
 
@@ -100,9 +100,7 @@
     z-index: 999;
 }
 
-/* ========================== */
-/*        OPEN PANEL          */
-/* ========================== */
+/* OPEN PANEL */
 
 [class*="membersWrap_"]:hover,
 [class*="membersWrap_"]:active {
@@ -154,9 +152,7 @@
         background-color .22s ease !important;
 }
 
-/* ========================== */
-/*        ACTIVE GLOW         */
-/* ========================== */
+/* ACTIVE GLOW */
 
 [class*="membersWrap_"]:hover [class*="members_"],
 [class*="membersWrap_"]:active [class*="members_"] {
@@ -169,45 +165,63 @@
         -3px 0 16px rgba(120, 255, 170, .08);
 }
 
-/* ========================== */
-/*      MEMBER ANIMATION      */
-/* ========================== */
+/* ROLL EFFECT */
 
-[class*="membersWrap_"] [class*="member_"] {
+[class*="membersWrap_"] [class*="member_"],
+[class*="membersWrap_"] [class*="membersGroup_"] {
+
+    transform-origin: right center;
 
     opacity:
         calc(
-            1 - var(--tokyo-memberlist-enabled)
+            1 - (var(--tokyo-memberlist-enabled) * .92)
         );
 
     transform:
         translateX(
             calc(
                 var(--tokyo-memberlist-enabled)
-                * 10px
+                * 36px
             )
         )
-        scale(
+        scaleX(
             calc(
-                1 - (var(--tokyo-memberlist-enabled) * .02)
+                1 - (var(--tokyo-memberlist-enabled) * .82)
+            )
+        )
+        scaleY(
+            calc(
+                1 - (var(--tokyo-memberlist-enabled) * .08)
+            )
+        );
+
+    filter:
+        blur(
+            calc(
+                var(--tokyo-memberlist-enabled)
+                * 1.5px
             )
         );
 
     transition:
-        opacity .18s ease,
-        transform .24s cubic-bezier(.22, 1, .36, 1) !important;
+        opacity .22s ease,
+        transform .32s cubic-bezier(.22, 1, .36, 1),
+        filter .28s ease !important;
 }
 
-/* ========================== */
-/*      MEMBERS VISIBLE       */
-/* ========================== */
+/* MEMBERS OPEN */
 
 [class*="membersWrap_"]:hover [class*="member_"],
-[class*="membersWrap_"]:active [class*="member_"] {
+[class*="membersWrap_"]:hover [class*="membersGroup_"],
+[class*="membersWrap_"]:active [class*="member_"],
+[class*="membersWrap_"]:active [class*="membersGroup_"] {
 
     opacity: 1;
 
     transform:
         translateX(0)
-        scale(1);
+        scaleX(1)
+        scaleY(1);
+
+    filter: blur(0);
 }
