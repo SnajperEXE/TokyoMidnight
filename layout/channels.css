@@ -196,6 +196,13 @@
         !important;
 }
 
+/* === CHANNEL TITLE HEADER - SEPARATOR === */
+
+[class*="subtitleContainer_"] [class*="title_"] {
+    border-bottom: none;
+}
+
+
 /* ================================= */
 /*        VOICE CHANNEL LIMITS       */
 /* ================================= */
