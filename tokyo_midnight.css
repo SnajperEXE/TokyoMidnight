@@ -1118,3 +1118,127 @@ box-shadow: 0 0 10px rgba(19, 188, 61, 0.581) !important;
     background-color: #09a20e5c !important;
     box-shadow: 0 0 10px rgba(47, 157, 57, 0.067) !important;
 }
+
+.chatGradientBase__36d07 {
+
+    background:
+        linear-gradient(
+            to top,
+            #07e2576a,
+            #08e03b2a,
+            transparent
+        ) !important;
+
+    backdrop-filter:
+        blur(1px) !important;
+}
+
+/* ========================== */
+/*           EMBEDS           */
+/* ========================== */
+
+.embedFull__623de {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3, 160, 61, 0.208),
+            #016b282d
+        ) !important;
+
+    border:
+        2px solid #07e22f3c !important;
+
+    backdrop-filter:
+        blur(1px) !important;
+}
+
+/* ========================== */
+/*     NEW MESSAGE BAR        */
+/* ========================== */
+
+[class*="newMessagesBar"] {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3, 160, 61, 0.503),
+            rgba(1, 107, 40, 0.437)
+        ) !important;
+
+    border:
+        2px solid #07e2573c !important;
+
+    backdrop-filter:
+        blur(1px) !important;
+}
+
+/* ========================== */
+/*       HEADER ICONS         */
+/* ========================== */
+
+[aria-label="Threads"] svg,
+[aria-label="Pinned Messages"] svg,
+[aria-label="Notification Settings"] svg,
+svg[aria-label="Search"] {
+
+    color:
+        var(--tokyo-midnight-icons)
+        !important;
+}
+
+/* === MEMBER LIST === */
+[class*="members_"] {
+    background: var(--tokyo-midnight-bg-main);
+    background-attachment: fixed !important;
+}
+
+/* === CHAT === */
+[class*="messagesWrapper_"] {
+    background: var(--tokyo-midnight-bg-main);
+    background-attachment: fixed !important;
+}
+
+/* === CHAT INPUT CONTAINER === */
+[class*="scrollableContainer_"] {
+    background: var(--tokyo-midnight-bg-main);
+    background-attachment: fixed !important;
+}
+
+/* === CHAT INPUT AREA === */
+[class*="form_"], 
+[class*="formWithLoadedChatInput_"] {
+    background: var(--tokyo-midnight-bg-main);
+    background-attachment: fixed !important;
+}
+[class*="subtitleContainer_"] [class*="title_"] {
+    background: var(--tokyo-midnight-bg-main);
+    background-attachment: fixed !important;
+}
+
+/* === APP BACKGROUND === */
+
+.appMount__51fd7,
+.bg__960e4,
+.directoryContainer_da3f59 {
+    background: var(--tokyo-midnight-bg-main);
+    background-attachment: fixed !important;
+}
+
+.sidebar__5e434:after {
+    background: var(--tokyo-midnight-bg-main);
+}
+
+/* === SERVER LIST === */
+
+nav[class*="guilds_"] {
+    background: var(--tokyo-midnight-bg-main) !important;
+    background-attachment: fixed !important;
+}
+
+/* === SERVER HEADER PANEL === */
+
+[data-has-banner] {
+    background: var(--tokyo-midnight-bg-main) !important;
+    background-attachment: fixed !important;
+}
