@@ -1189,7 +1189,7 @@ svg[aria-label="Search"] {
 
 /* === MEMBER LIST === */
 [class*="members_"] {
-    background: var(--tokyo-midnight-bg-main);
+    background: var(--tokyo-midnight-bg-main) !important;
     background-attachment: fixed !important;
 }
 
