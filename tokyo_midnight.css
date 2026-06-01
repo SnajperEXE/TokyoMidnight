@@ -1388,3 +1388,177 @@ nav.guilds__5e434 {
 .guildBadge__85d16 .flowerStar__3e3b0 {
     filter: hue-rotate(160deg) saturate(2.5) brightness(1.3) !important;
 }
+
+/* CHANNELS */
+
+/* === CHANNEL LIST - DIVIDER === */
+.sectionDivider__629e4 {
+    background-color: var(--tokyo-midnight-bg-main);
+}
+
+/* === CHANNEL ICONS === */
+
+.icon__2ea32 {
+    transition: .2s ease !important;
+}
+
+/* === CHANNEL ACTIVE === */
+
+.modeSelected__2ea32 .link__2ea32 {
+    border-radius: 8px !important;
+}
+
+/* === CHANNEL NAME === */
+
+.name__2ea32 {
+    transition: .2s ease !important;
+}
+
+/* === Channel List - Behind User Settings & Activity Panel */
+.container__2637a {
+    background-color: inherit;
+}
+
+/* Channel list top separator */
+.header_f37cb1 {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* ================================= */
+/*        CHANNEL MENTIONS           */
+/* ================================= */
+
+.channelMention {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(114,242,187,0.10) 0%,
+            rgba(114,242,187,0.04) 100%
+        ) !important;
+
+    border-radius:
+        10px !important;
+
+    padding:
+        3px 8px !important;
+
+    transition:
+        all 0.2s ease;
+
+    box-shadow:
+        0 0 8px rgba(114,242,187,0.05);
+}
+
+/* TEXT */
+
+.channelMention .name_b75563 {
+
+    color:
+        #72f2bb !important;
+
+    font-weight:
+        600;
+}
+
+/* ICON */
+
+.channelMention .icon_b75563 {
+
+    color:
+        rgba(114,242,187,0.78) !important;
+
+    filter:
+        drop-shadow(0 0 4px rgba(114,242,187,0.14));
+}
+
+/* HOVER */
+
+.channelMention:hover {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(114,242,187,0.16) 0%,
+            rgba(114,242,187,0.07) 100%
+        ) !important;
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 0 12px rgba(114,242,187,0.10);
+}
+
+/* ========================== */
+/* 			CHANNELS 		  */
+/* ========================== */
+
+.icon__2ea32,
+.name__2ea32 {
+    color:
+        var(--tokyo-midnight-channel-text) !important;
+}
+
+.wrapper__2ea32:hover .link__2ea32,
+.wrapper__2ea32:hover .name__2ea32 {
+    color:
+        var(--tokyo-midnight-channel-text-hover)
+        !important;
+}
+
+/* === CHANNEL TITLE HEADER - SEPARATOR === */
+
+[class*="subtitleContainer_"] [class*="title_"] {
+    border-bottom: none;
+}
+
+
+/* ================================= */
+/*        VOICE CHANNEL LIMITS       */
+/* ================================= */
+
+
+/* === CURRENT USERS === */
+.users__260e1 {
+    background-color: var(--tokyo-midnight-main) !important;
+    color: black;
+    font-weight: 600;
+}
+
+/* === MAX USERS === */
+.total__260e1 {
+    background-color: var(--tokyo-midnight-main2) !important;
+    color: black;
+    font-weight: 600;
+}
+
+/* === MAX USERS = AFTER */
+.total__260e1:after {
+    border-right-color: var(--tokyo-midnight-border-strong);
+}
+
+/* === CHANNEL - NOT ON YOUR LIST - HEADER === */
+.chatHeaderBar_dc83f5 {
+background-color: var(--tokyo-midnight-bg-panels);
+border: 2px ridge var(--tokyo-midnight-border);
+border-radius: 8px;
+}
+
+.chatHeaderBarText_dc83f5 {
+    color: var(--tokyo-midnight-text-normal) !important;
+    text-shadow: 0 0 6px var(--tokyo-midnight-text-shadow);
+}
+
+[class*="chatHeaderBar"] [class*="buttonChildrenWrapper"], primary_a22cb0 {
+    background-color: var(--tokyo-midnight-main);
+    color: black;
+    font-weight: 700 !important;
+    box-shadow: 0 0 15px rgba(67, 255, 136, 0.368);
+
+}
+
+ .primary_a22cb0:not([class*="chatHeaderBar"]:not([class*="buttonChildrenWrapper"])) {
+    background-color: var(--tokyo-midnight-shadow-glow);
+}
