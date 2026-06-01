@@ -79,6 +79,11 @@
   background-color: var(--tokyo-midnight-bg-main) !important;
 }
 
+/* MEMBER LIST BG */
+.members_c8ffbb {
+    background-color: var(--tokyo-midnight-bg-main);
+}
+
 /* === CHAT INPUT CONTAINER === */
 [class*="scrollableContainer_"] {
     border: 2px solid var(--tokyo-midnight-border) !important;
