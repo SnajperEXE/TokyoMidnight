@@ -2,12 +2,12 @@
 
   /* === CORE ATMOSPHERE === */
 
-  --tokyo-midnight-bg-main: #090910;
+  --tokyo-midnight-bg-main: #0b0b14;
   --tokyo-midnight-bg-sidebars: #0f0f12f7;
   --tokyo-midnight-bg-panels: #18181df6;
 
   /* === COLORS === */
-  --tokyo-midnight-black: #020202;
+  --tokyo-midnight-black: #0c0c11;
   --tokyo-midnight-yellow: #cac72e;
   --tokyo-midnight-orange: #d88124;
   --tokyo-midnight-green: #4fe46a;
@@ -28,7 +28,6 @@
 
   --tokyo-midnight-text-normal: #7dff9f;
   --tokyo-midnight-text-header: #32fe6f;
-  --tokyo-midnight-yt-link-text: #ff0000;
   --tokyo-midnight-link-cards: #a9ffc4;
 
   /* === CHANNELS === */
