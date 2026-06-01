@@ -1392,7 +1392,7 @@ nav.guilds__5e434 {
 
 /* === CHANNEL LIST - DIVIDER === */
 .sectionDivider__629e4 {
-    background-color: var(--tokyo-midnight-bg-main);
+    background-color: var(--tokyo-midnight-bg-main) !important;
 }
 
 /* === CHANNEL ICONS === */
