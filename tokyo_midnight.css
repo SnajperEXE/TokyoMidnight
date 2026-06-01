@@ -1356,7 +1356,7 @@ color: var(--tokyo-midnight-icons);
 
 /* === CHANNEL LIST === */
 .container__2637a {
-background-color: var(--tokyo-midnight-bg-main);
+background-color: var(--tokyo-midnight-bg-main) !important;
 }
 
 /* === SERVER TITLE HEADER */
@@ -1411,11 +1411,6 @@ nav.guilds__5e434 {
 
 .name__2ea32 {
     transition: .2s ease !important;
-}
-
-/* === Channel List - Behind User Settings & Activity Panel */
-.container__2637a {
-    background-color: inherit;
 }
 
 /* Channel list top separator */
