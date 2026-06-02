@@ -1813,3 +1813,59 @@ svg.text__0d0f9.boostCountText__0d0f9 {
 
    transform: translateX(-50px);
 }
+
+/* === VENCORD SPECIAL CARD === */
+
+.vc-special-card-special {
+
+    border: 1px solid rgba(90,250,162,.18) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 0 12px rgba(90,250,162,.06);
+    backdrop-filter: blur(10px);
+    transition: border .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+/* === VENCORD SPECIAL CARD - HOVER === */
+.vc-special-card-special:hover {
+
+    border-color: var(--tokyo-midnight-border) !important;
+    box-shadow: 0 0 18px rgba(90,250,162,.12);
+    transform: translateY(-1px);
+}
+
+/* === VENCORD SPECIAL CARD TITLE === */
+.vc-special-title.vc-h5 {
+    color: var(--tokyo-midnight-black) !important;
+}
+
+/* === VENCORD DONATE BUTTON === */
+
+.vc-donate-button {
+
+    background: var(--tokyo-midnight-special-buttons) !important;
+    border: 1px solid rgba(255,0,85,.35) !important;
+    border-radius: 12px !important;
+    color: var(--tokyo-midnight-black);
+    box-shadow: 0 0 10px rgba(255,0,85,.18);
+    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+/* === VENCORD DONATE BUTTON - HOVER === */
+.vc-donate-button:hover {
+
+    box-shadow: 0 0 16px rgba(255,0,85,.32), 0 0 28px rgba(255,0,85,.12);
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+/* === SETTINGS SCROLL FADE === */
+.fixedContent__409aa:after {
+    background: linear-gradient( to bottom, rgba(90,250,162,.08), transparent ) !important;
+    left: 4px;
+}
+
+/* === SETTINGS SEARCH BAR BORDERS === */
+.wrapper__72c38 {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
