@@ -1869,3 +1869,166 @@ svg.text__0d0f9.boostCountText__0d0f9 {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
+
+/* ======================== */
+/*         FRIENDS          */
+/* ======================== */
+
+/* === FRIENDS PAGE === */
+
+.peopleColumn__133bf {
+
+    background: var(--tokyo-midnight-bg-panels) !important;
+}
+
+/* === BLOCKED MEMBERS NOTICE === */
+
+.blockedIgnoredSettingsNotice__6811a {
+
+    background: var(--tokyo-midnight-bg-panels) !important;
+    border: 1px solid rgba(90,250,162,.10) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 0 12px rgba(90,250,162,.04);
+}
+
+/* === FRIENDS - UPPER CONTAINER === */
+
+.theme-dark .themed__9293f {
+
+    background: var(--tokyo-midnight-bg-main) !important;
+}
+
+/* === DIRECT MESSAGES PANEL === */
+
+.scroller__99e7c {
+
+     background: var(--tokyo-midnight-bg-panels) !important;
+    border-right: 1px solid rgba(90,250,162,.06);
+}
+
+/* === DIRECT MESSAGES - SEARCH BAR === */
+
+.searchBar_e6b769 {
+
+    background: var(--tokyo-midnight-bg-panels) !important;
+    border: 1px solid rgba(90,250,162,.18) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 0 10px rgba(90,250,162,.05);
+}
+
+/* === DM ITEM ICONS === */
+.channel__972a0:not(.dm__972a0) svg {
+color: var(--tokyo-midnight-green)
+}
+
+/* === SHOP - NEW BADGE === */
+.expressive_c2b88c {
+
+    background: var(--tokyo-midnight-green);
+    color: var(--tokyo-midnight-black);
+    border-radius: 999px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 0 12px rgba(0, 255, 26, 0.474);
+}
+
+/* === DM CATEGORY - TEXT === */
+.channel__972a0:not(.dm__972a0) .link__972a0 {
+color: var(--tokyo-midnight-main2);
+}
+
+/* === FRIEND - ACTIVE NOW === */
+[class*="nowPlayingColumn"] {
+  background-color: var(--tokyo-midnight-bg-panels);
+}
+
+/* === FRIENDS - ACTIVE NOW (TOP HEADER) === */
+.refresh-active-now .header__00943 {
+background: var(--tokyo-midnight-bg-sidebars);
+border-top: 2px solid var(--tokyo-midnight-main);
+border-left: 2px solid var(--tokyo-midnight-main);
+border-right: 2px solid var(--tokyo-midnight-main);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+
+/* === FRIENDS - ACTIVE NOW SECTION === */
+
+.refresh-active-now .section__00943 {
+
+    background: var(--tokyo-midnight-bg-sidebars);
+    border-left: 2px solid var(--tokyo-midnight-main);
+    border-right: 2px solid var(--tokyo-midnight-main);
+    border-top: 1px dashed rgba(15, 126, 5, 0.318);
+    border-bottom: 2px solid var(--tokyo-midnight-main);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* === FRIENDS - ACTIVITY TIMER === */
+
+.refresh-active-now .section__00943 .textContent__00943:last-child {
+
+    background: var(--tokyo-midnight-custom2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* === ACTIVE NOW - STATUS TEXT === */
+
+.refresh-active-now 
+.text-xs\/normal_cf4812.textContent__00943 {
+
+    color: var(--tokyo-midnight-green) !important;
+}
+
+/* === SEARCH BAR - FILTERS === */
+.container__16eb0 {
+    background-color: var(--tokyo-midnight-bg-panels);
+    border: 1px solid var(--tokyo-midnight-border);
+}
+
+/* === SEARCH - SECTION TITLES === */
+.container__16eb0 .text-xs\/semibold_cf4812 {
+    color: var(--tokyo-midnight-text-normal) !important;
+}
+
+/* === SEARCH - ICONS === */
+.itemIcon__971b5 {
+    color: var(--tokyo-midnight-icons);
+}
+
+/* === SEARCH - CLEAR HISTORY BUTTON === */
+.clearSearchHistoryIcon__971b5 {
+color: var(--tokyo-midnight-red);
+filter: drop-shadow(0 0 10px rgba(219, 10, 42, 0.856));
+}
+
+/* === SEARCH - FLTERS === */
+.container__16eb0 .text-sm\/medium_cf4812 {
+    color: var(--tokyo-midnight-main2) !important;
+}
+
+
+/* === SEARCH - DYNAMIC VALUES === */
+.container__16eb0 ul[aria-labelledby="Filters-header"] .item__971b5 > div div:last-child {
+    color: rgb(149, 255, 146)!important;
+}
+
+/* === SEARCH - FILTER PREFIXES === */
+.container__16eb0 ul[aria-labelledby="Filters-header"] .item__971b5 > div .filterSublabelTextContainer__971b5 div:first-child {
+    color: var(--tokyo-midnight-main2) !important;
+}
+
+/* === SEARCH - SELECTED TAG BACKGROUND === */
+/* Zmení pozadie celého štítku (napr. from: snajper.exe) */
+[class*="searchTag_"] {
+    background-color: var(--tokyo-midnight-bg-panels) !important; /* Prípadne sem daj inú premennú */
+    border: 1px solid var(--tokyo-midnight-border); /* Voliteľné: pridá jemný okraj */
+}
+
+/* === SEARCH - RECENT SEARCH === */
+.container__16eb0 .autocompletePillContainer__971b5 {
+    background-color: rgba(71, 205, 30, 0.458) !important; /* Sem daj svoje pozadie */
+    border-radius: 8px;
+}
