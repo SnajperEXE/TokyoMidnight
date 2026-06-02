@@ -1348,7 +1348,7 @@ color: var(--tokyo-midnight-icons);
 
 /* === APP BACKGROUND === */
 .bg__960e4 {
-    background-image: url(https://cdn.discordapp.com/attachments/1504432183706910751/1509560083523309699/bgtm.png?ex=6a1e3c22&is=6a1ceaa2&hm=0a48bddb8c256d6ed729ac2a794106faf270c9ae51f900165268930c3031398a&);
+    background-image: var(--tokyo-midnight-app-bg);
     background-size: cover !important;
     background-position: center !important;
     filter: blur(5px);
@@ -1555,4 +1555,261 @@ border-radius: 8px;
 
  .primary_a22cb0:not([class*="chatHeaderBar"]:not([class*="buttonChildrenWrapper"])) {
     background-color: var(--tokyo-midnight-shadow-glow);
+}
+
+[class*="page__"]{
+    border-inline-start: none !important;
+}
+
+.thumbAnchor_e4d939 { 
+
+  background: conic-gradient( from 180deg at 50% 50%, #5afa85, #00ff62, #45f683, #7fffd4, #5afaa2 );
+  border-radius: 999px !important;
+  box-shadow: 0 0 6px rgba(0, 255, 174, 0.6), 0 0 12px rgba(90, 250, 162, 0.35);
+}
+
+/* === USER SETTINGS - MENU HOVER === */
+.item_caf372:hover:not(.active_caf372):not(.destructive_caf372) {
+    background-color: var(--tokyo-midnight-green) !important;
+    color: var(--tokyo-midnight-black);
+
+}
+
+/* === USER SETTINGS - SUBMENU HOVER === */
+.item_e4d939:hover {
+  color: var(--tokyo-midnight-green) !important;
+}
+
+.track_e4d939 {
+    background: rgba(90, 250, 162, 0.155) !important;
+    border-radius: 999px !important;
+}
+
+/* ======================== */
+/*      VENCORD FOOTER      */
+/* ======================== */
+
+/* Vencord */
+.clickable__081d7 > span:nth-of-type(1) {
+    color: #bb9af7 !important;
+}
+
+/* Electron */
+.clickable__081d7 > span:nth-of-type(2) {
+    color: #00ffae !important;
+}
+
+/* Chromium */
+.clickable__081d7 > span:nth-of-type(3) {
+
+    background: var(--tokyo-midnight-opal) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* === FOOTER === */
+
+.clickable__081d7 {
+
+    background: linear-gradient(rgba(90,250,162,.04), rgba(0,255,174,.02)) !important;
+    border: 1px solid rgba(90,250,162,.14) !important;
+    border-radius: 10px !important;
+    padding: 8px !important;
+    backdrop-filter: blur(10px);
+}
+
+/* == VERSION === */
+.compactInfo__081d7 span.text-xxs\/normal_cf4812 {
+    color: var(--tokyo-midnight-text-normal) !important;
+}
+
+/* === USER SETTINGS - DESTRUCTIVE (LOG OUT) === */
+
+.item_caf372.destructive_caf372 {
+
+    border-radius: 10px !important;
+    transition: .2s ease;
+}
+
+/* === HOVER === */
+
+.item_caf372.destructive_caf372:hover {
+
+    background: linear-gradient(180deg, rgba(255,70,70,.14), rgba(255,40,40,.08)) !important;
+    box-shadow: 0 0 8px rgba(255,70,70,.22);
+    color: #ff7070 !important;
+}
+.item_caf372.destructive_caf372:hover svg {
+
+    color: #ff7070 !important;
+}
+
+/* === SETTINGS PANELS / CARDS === */
+
+.cardPrimary__73069,
+.card__73069 {
+
+    background: linear-gradient(rgba(90, 250, 162, 0.095), rgba(0,255,174,.025)) !important;
+
+    border: 1px solid rgba(90,250,162,.12) !important;
+
+    border-radius: 14px !important;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 0 12px rgba(90,250,162,.04);
+}
+
+/* === SETTINGS GROUPS === */
+
+.groupContent_ef8d95 {
+
+    background: linear-gradient(90deg, rgba(32, 237, 93, 0.133), rgba(33, 200, 72, 0.538)) !important;
+    border: 1px solid rgba(90,250,162,.10) !important;
+    border-radius: 14px !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 12px rgba(90,250,162,.03);
+    padding: 16px !important;
+}
+
+/* === NEW UNREADS - BAR === */
+.bar__7aaec {
+    background-color: var(--tokyo-midnight-green2);
+}
+
+/* === NEW UNREADS - ARROW === */
+.unreadIcon__7aaec {
+color: var(--tokyo-midnight-black);
+}
+
+/* === NEW UNREADS - TEXT === */
+.barText__7aaec {
+color: var(--tokyo-midnight-black) !important;
+font-weight: 700;
+}
+
+/* === BOOST GOAL BAR BACKGROUND === */
+.progressContainer__0d0f9 {
+background: var(--tokyo-midnight-green2);
+}
+
+/* === BOOST GOAL PROGRESS BAR === */
+.progress__0d0f9 {
+background: var(--tokyo-midnight-opal);
+}
+
+/* === BOOST GOAL - TEXT === */
+.textContentContainer__0d0f9 .text-xs\/semibold_cf4812 {
+color: var(--tokyo-midnight-black) !important;
+font-weight: 700;
+}
+
+/*  === BOOST GOAL BAR - ARROW === */
+svg.text__0d0f9.boostCountText__0d0f9 {
+    color: var(--tokyo-midnight-black) !important;
+}
+
+/* ======================== */
+/*      CONTEXT MENU        */
+/* ======================== */
+
+/* === MENU CONTAINER === */
+
+.menu_c1e9c4 {
+
+    background: var(--tokyo-midnight-bg-sidebars) !important;
+
+    border: 1px solid var(--tokyo-midnight-border-strong) !important;
+
+    border-radius: 14px !important;
+
+    backdrop-filter: blur(14px);
+
+    box-shadow:
+        var(--tokyo-midnight-border-shadow),
+        var(--tokyo-midnight-shadow-glow);
+
+    overflow: hidden;
+}
+
+/* === MENU ITEMS === */
+
+.item_c1e9c4 {
+
+    border-radius: 10px !important;
+
+    margin: 4px 8px !important;
+
+    transition:
+        background .18s ease,
+        border .18s ease,
+        transform .12s ease;
+}
+
+/* === MENU HOVER === */
+
+.item_c1e9c4:hover:not(.colorDanger_c1e9c4) {
+
+    background: linear-gradient( 90deg, rgba(90,250,162,.16), rgba(90,250,162,.07)) !important;
+
+    border-left: 2px solid var(--tokyo-midnight-border) !important;
+    box-shadow: 0 0 10px rgba(90,250,162,.08);
+}
+
+/* === LABELS === */
+
+.label_c1e9c4 {
+
+    color: var(--tokyo-midnight-text-normal) !important;
+    font-weight: 500;
+}
+
+/* === ICONS === */
+
+.icon_c1e9c4 {
+
+    color: var(--tokyo-midnight-icons) !important;
+    opacity: .92;
+}
+
+/* === MENU ICON HOVER === */
+
+.item_c1e9c4:hover .icon_c1e9c4 {
+
+    color: var(--tokyo-midnight-green) !important;
+
+    filter: drop-shadow(0 0 4px rgba(90,250,162,.45));
+}
+
+/* === SEPARATORS === */
+
+.separator_c1e9c4 {
+
+    background: rgba(90,250,162,.08) !important;
+    height: 1px !important;
+    margin: 8px 10px !important;
+}
+
+/* === BRAND ITEM === */
+
+.colorBrand_c1e9c4 .label_c1e9c4,
+.colorBrand_c1e9c4 .icon_c1e9c4 {
+
+    color: var(--tokyo-midnight-green) !important;
+}
+
+/* === CHECKBOX === */
+
+.checkboxIndicator__714a9 {
+
+    color: var(--tokyo-midnight-icons) !important;
+}
+
+/* === CONTEXT MENU POSITION FIX === */
+
+.menu_c1e9c4 {
+
+   transform: translateX(-50px);
 }
