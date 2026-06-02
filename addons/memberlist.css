@@ -56,7 +56,7 @@
     bottom: 0;
     width: 48px;
     pointer-events: none;
-    background: var(--tokyo-ember-fade);
+    background: var(--tokyo-member-fade);
     opacity: var(--tokyo-memberlist-enabled);
     transition: opacity .32s ease;
 }
