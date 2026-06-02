@@ -858,7 +858,7 @@ font-weight: 700;
 }
 
 /* === MESSAGE DATE === */
-.content__908e2 {
+.isUnread__908e2 .content__908e2 {
 background: var(--tokyo-midnight-green);
 color: var(--tokyo-midnight-black);
 font-weight: 700;
