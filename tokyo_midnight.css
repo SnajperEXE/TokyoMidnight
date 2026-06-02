@@ -1809,7 +1809,7 @@ svg.text__0d0f9.boostCountText__0d0f9 {
 
 /* === CONTEXT MENU POSITION FIX === */
 
-.menu_c1e9c4 {
+.menu_c1e9c4:not(.scroller_c1e9c4) {
 
    transform: translateX(-50px);
 }
