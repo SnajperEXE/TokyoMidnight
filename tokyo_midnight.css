@@ -2032,3 +2032,34 @@ filter: drop-shadow(0 0 10px rgba(219, 10, 42, 0.856));
     background-color: rgba(71, 205, 30, 0.458) !important; /* Sem daj svoje pozadie */
     border-radius: 8px;
 }
+
+/* === SEARCH - CLEAR SEARCH - HOVER */
+.clearSearchHistoryIcon__971b5:hover {
+    color: #f97e7e !important;
+}
+
+/* NAVIGATION ICONS */
+[aria-label="DevTools"] {
+    color: var(--tokyo-midnight-icons);
+}
+
+[aria-label="Help"] {
+    color: var(--tokyo-midnight-icons);
+}
+
+[aria-label="Inbox"] {
+    color: var(--tokyo-midnight-icons);
+}
+
+/* NAVIGATION ICONS - HOVER */
+[aria-label="DevTools"]:hover {
+    color: var(--tokyo-midnight-icons-2) !important;
+}
+
+[aria-label="Help"]:hover {
+    color: var(--tokyo-midnight-icons-2);
+}
+
+[aria-label="Inbox"]:hover {
+    color: var(--tokyo-midnight-icons-2);
+}
