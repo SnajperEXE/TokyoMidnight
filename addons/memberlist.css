@@ -8,65 +8,130 @@
 /*       MEMBER LIST          */
 /* ========================== */
 
+/* ---------- SETTINGS ---------- */
+
+:root {
+    --tokyo-memberlist-enabled: 1;
+
+    --tokyo-memberlist-width: 240px;
+    --tokyo-memberlist-collapsed: 50px;
+    --tokyo-memberlist-sensor-width: 20px;
+
+    --tokyo-memberlist-offset:
+        calc(var(--tokyo-memberlist-width) - var(--tokyo-memberlist-collapsed));
+
+    --tokyo-member-opacity:
+        calc(1 - (.08 * var(--tokyo-memberlist-enabled)));
+
+    --tokyo-membergroup-opacity:
+        calc(1 - (.30 * var(--tokyo-memberlist-enabled)));
+}
+
+/* ---------- WRAPPER ---------- */
+
 [class*="membersWrap_"] {
     min-width: 0 !important;
     position: relative;
+
     width: var(--tokyo-memberlist-width) !important;
-    transform: translate3d(calc(var(--tokyo-memberlist-width) - var(--tokyo-memberlist-collapsed)), 0, 0);
-    transition: transform .38s cubic-bezier(0.25, 1, 0.5, 1) !important;
+
+    transform:
+        translate3d(var(--tokyo-memberlist-offset), 0, 0);
+
+    transition:
+        transform .38s cubic-bezier(0.25, 1, 0.5, 1) !important;
+
     will-change: transform;
 }
 
-/* OPENED PANEL */
+/* ---------- OPEN ---------- */
+
 [class*="membersWrap_"]:hover,
 [class*="membersWrap_"]:focus-within {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0,0,0);
 }
 
-/* INVISIBLE SENSOR */
+/* ---------- SENSOR ---------- */
+
 [class*="membersWrap_"]::before {
     content: "";
+
     position: absolute;
+
     top: 0;
-    left: calc(-1 * var(--tokyo-memberlist-sensor-width));
     bottom: 0;
-    width: calc(var(--tokyo-memberlist-sensor-width) + 40px); 
-    right: -40px; 
-    pointer-events: all;
+
+    left:
+        calc(-1 * var(--tokyo-memberlist-sensor-width));
+
+    width:
+        calc(var(--tokyo-memberlist-sensor-width) + 40px);
+
+    pointer-events: auto;
     z-index: 10;
 }
 
-/* MEMBERS PANEL */
+/* ---------- PANEL ---------- */
+
 [class*="membersWrap_"] [class*="members_"] {
     width: var(--tokyo-memberlist-width) !important;
+
     overflow: hidden;
     position: relative;
-    border-left: 1px solid var(--tokyo-midnight-border);
-    box-shadow: inset 1px 0 rgba(129,252,166,.04), -2px 0 12px var(--tokyo-member-shadow);
-    backdrop-filter: blur(10px) brightness(.94) saturate(.82);
-    transition: backdrop-filter .36s ease, border-color .24s ease, box-shadow .28s ease !important;
+
+    border-left:
+        1px solid var(--tokyo-midnight-border);
+
+    box-shadow:
+        inset 1px 0 rgba(129,252,166,.04),
+        -2px 0 12px rgba(0,0,0,.45);
+
+    backdrop-filter:
+        blur(10px)
+        brightness(.94)
+        saturate(.82);
+
+    transition:
+        backdrop-filter .36s ease,
+        border-color .24s ease,
+        box-shadow .28s ease !important;
 }
 
-/* EDGE SHADOW */
+/* ---------- EDGE FADE ---------- */
+
 [class*="membersWrap_"] [class*="members_"]::after {
     content: "";
+
     position: absolute;
+
     top: 0;
     right: 0;
     bottom: 0;
+
     width: 48px;
+
     pointer-events: none;
+
     background: var(--tokyo-member-fade);
+
     opacity: var(--tokyo-memberlist-enabled);
+
     transition: opacity .32s ease;
 }
 
-/* OPEN PANEL EFFECTS */
+/* ---------- OPEN EFFECT ---------- */
+
 [class*="membersWrap_"]:hover [class*="members_"],
 [class*="membersWrap_"]:focus-within [class*="members_"] {
+
     border-left: 1px solid transparent;
+
     box-shadow: none;
-    backdrop-filter: blur(14px) brightness(1) saturate(1);
+
+    backdrop-filter:
+        blur(14px)
+        brightness(1)
+        saturate(1);
 }
 
 [class*="membersWrap_"]:hover [class*="members_"]::after,
@@ -74,30 +139,48 @@
     opacity: 0;
 }
 
-/* MEMBER ITEMS */
+/* ---------- MEMBERS ---------- */
+
 [class*="membersWrap_"] [class*="member_"] {
-    opacity: calc(1 - (var(--tokyo-memberlist-enabled) * .06));
+
+    opacity: var(--tokyo-member-opacity);
+
     filter: saturate(.82);
-    transition: opacity .24s ease, filter .32s ease !important;
+
+    transition:
+        opacity .24s ease,
+        filter .32s ease !important;
 }
 
 [class*="membersWrap_"]:hover [class*="member_"],
 [class*="membersWrap_"]:focus-within [class*="member_"] {
+
     opacity: 1;
+
     filter: saturate(1);
 }
 
-/* ROLE LABELS */
+/* ---------- ROLE LABELS ---------- */
+
 [class*="membersWrap_"] [class*="membersGroup_"] {
+
     overflow: hidden;
+
     white-space: nowrap;
+
     text-overflow: clip;
-    opacity: calc(1 - (var(--tokyo-memberlist-enabled) * .28));
-    transition: opacity .28s ease, letter-spacing .32s ease !important;
+
+    opacity: var(--tokyo-membergroup-opacity);
+
+    transition:
+        opacity .28s ease,
+        letter-spacing .32s ease !important;
 }
 
 [class*="membersWrap_"]:hover [class*="membersGroup_"],
 [class*="membersWrap_"]:focus-within [class*="membersGroup_"] {
+
     opacity: 1;
+
     letter-spacing: .02em;
 }
