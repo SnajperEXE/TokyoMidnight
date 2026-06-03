@@ -1149,7 +1149,7 @@ nav[class*="guilds_"] {
 /* CHAT INPUT TEXT */
 .slateTextArea_ec4baf {
 
-color: var(--tokyo-midnight-main) !important;
+color: var(--tokyo-midnight-main2) !important;
 text-shadow: 0 0 10px #55e977c4;
 }
 
@@ -2197,4 +2197,79 @@ background: var(--tokyo-midnight-custom3) !important;
 /* === EMBED VIDEO - BUFFER === */
 .buffer_b26b79 {
     background-color: var(--tokyo-midnight-green2);
+}
+
+/* === USER MENU - SUBMENU INDICATOR === */
+.thumb_e4d939 {
+
+  background: conic-gradient( from 180deg at 50% 50%, #5afa85, #00ff62, #45f683, #7fffd4, #5afaa2 ); /* Changes the color of the vertical indicator into nice gradient color */
+  border-radius: 999px !important;
+    box-shadow: 0 0 8px rgba(129,252,166,.22);
+}
+
+/* === CHANNEL CATEGORY NAME === */
+.mainContent__29444 .name__29444 .overflow_b0dfc2 {
+  background: var(--tokyo-midnight-custom4) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+/* === CHANNEL CATEGORY ARROW === */
+
+.mainContent__29444 .icon__29444 {
+  color: transparent !important;
+  background: var(--tokyo-midnight-custom4) !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5.3 9.3a1 1 0 0 1 1.4 0l5.3 5.29 5.3-5.3a1 1 0 1 1 1.4 1.42l-6 6a1 1 0 0 1-1.4 0l-6-6a1 1 0 0 1 0-1.42Z' fill='black'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5.3 9.3a1 1 0 0 1 1.4 0l5.3 5.29 5.3-5.3a1 1 0 1 1 1.4 1.42l-6 6a1 1 0 0 1-1.4 0l-6-6a1 1 0 0 1 0-1.42Z' fill='black'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* === MENTION BUTTONS === /*
+
+/* === MENTION BUTTON - ON === */
+[role="switch"][aria-checked="true"] .mentionButton__841c8 {
+    color: var(--tokyo-midnight-green) !important; /* Changes the text color for Enabled Mention text to Green Color */
+}
+
+/* === MENTION BUTTON - OFF === */
+[role="switch"][aria-checked="false"] .mentionButton__841c8 {
+    color: var(--tokyo-midnight-red) !important; /* Changes the text color for Disabled Mention text to Red Color */
+}
+
+/* === USER BUTTONS - ARROWS === */
+button.button__67645, span.button__67645 {
+color: var(--tokyo-midnight-icons) !important; /* Changes the color of the colapsable/expandable arrow into soft green color */
+}
+
+/* === USER BUTTONS - AUDIO === */
+.lottieIcon__5eb9b svg {
+  color: var(--tokyo-midnight-icons);
+}
+
+/* === CHAT BUTTON - EMOJI === */
+.spriteGreyscale__04eed {
+background-color: var(--tokyo-midnight-icons);
+}
+
+/* === CHAT BUTTON - EMOJI (HOVER) === */
+.spriteColored__04eed {
+  filter: hue-rotate(90deg) saturate(0.5) brightness(1.0); /* CHanges default colored emoji sprite into mint color on hover */
+}
+
+/* === MEMBER LIST - MEMBER CARD (NO NITRO NAMEPLATES! === */
+.childContainer__91a9d:not(.nameplated__91a9d) {
+  background-color: #0f0f18; /* Changes background for Non-Nitro Nameplates to Dark-Blue Color */
+}
+
+/* === MEMBER LIST - MEMBER CARD TEXT === */
+.container__91a9d {
+  color: var(--tokyo-midnight-text-normal);
+  font-weight: 700 !important;
+  padding: 0px !important;
+  border: 1px dotted green; /* Makes the green text pops out on a dark bacground inside card */
+}
+
+/* === MEMBER LIST - MEMBER CARD (NO NITRO NAMEPLATES HOVER) === */
+.childContainer__91a9d:not(.nameplated__91a9d):hover {
+  background-color: #080816 !important; /* Dark Midnight Background FOR non-nitro nameplates on Hover State */
 }
