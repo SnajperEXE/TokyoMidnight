@@ -2295,3 +2295,14 @@ background-color: var(--tokyo-midnight-icons);
     -webkit-text-fill-color: transparent;
 }
 
+/* === UNREAD MESSAGE DIVIDER === */
+.isUnread__908e2 {
+  border: none !important;
+}
+
+/* === MESSAGE DATE PILL === */
+  .content__908e2 {
+  background: var(--tokyo-midnight-green) !important; /* changes the background color of the divider content to match the theme */
+  color: var(--tokyo-midnight-black) !important; /* Changed the message date to black to make the date visible */
+  font-weight: 700 !important; /* Set the text to bold */
+}
