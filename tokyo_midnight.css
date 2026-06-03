@@ -2285,7 +2285,7 @@ background-color: var(--tokyo-midnight-icons);
     box-shadow: 0 0 8px rgba(129,252,166,.25), 0 0 16px rgba(129,252,166,.10);
 }
 
-/* === DEVTOOLS - GRADIENT PLACEHOLDER === */
+/* === DEVTOOLS -  PLACEHOLDER TEXT === */
 
 .input__0f084[placeholder*="DevTools"]::placeholder {
 
@@ -2294,3 +2294,4 @@ background-color: var(--tokyo-midnight-icons);
     background-clip:text;
     -webkit-text-fill-color: transparent;
 }
+
