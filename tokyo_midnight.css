@@ -2273,3 +2273,24 @@ background-color: var(--tokyo-midnight-icons);
 .childContainer__91a9d:not(.nameplated__91a9d):hover {
   background-color: #080816 !important; /* Dark Midnight Background FOR non-nitro nameplates on Hover State */
 }
+
+/* === DEVTOOLS - SEARCH FOCUS === */
+
+.wrapper__72c38:has(
+    input[placeholder*="DevTools"]:focus
+) {
+
+    outline: 2px solid var(--tokyo-midnight-green) !important;
+    outline-offset: -2px;
+    box-shadow: 0 0 8px rgba(129,252,166,.25), 0 0 16px rgba(129,252,166,.10);
+}
+
+/* === DEVTOOLS - GRADIENT PLACEHOLDER === */
+
+.input__0f084[placeholder*="DevTools"]::placeholder {
+
+    background: var(--tokyo-midnight-custom4);
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
