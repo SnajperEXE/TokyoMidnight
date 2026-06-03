@@ -859,8 +859,8 @@ font-weight: 700;
 
 /* === MESSAGE DATE === */
 .isUnread__908e2 .content__908e2 {
-background: var(--tokyo-midnight-green);
-color: var(--tokyo-midnight-black);
+background: var(--tokyo-midnight-green) !important;
+color: var(--tokyo-midnight-black) !important
 font-weight: 700;
 clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 
@@ -2062,4 +2062,139 @@ filter: drop-shadow(0 0 10px rgba(219, 10, 42, 0.856));
 
 [aria-label="Inbox"]:hover {
     color: var(--tokyo-midnight-icons-2);
+}
+
+/* === VENCORD - THEME SLIDERS === */
+
+/* === OFF STATE === */
+
+.vc-switch-container {
+    background-color: var(--tokyo-midnight-red) !important;
+}
+
+
+   /* === ON STATE === */
+
+
+.vc-switch-container.vc-switch-checked {
+    background-color: var(--tokyo-midnight-green)!important;
+}
+
+   /* === BLACK CIRCLE === */
+
+.vc-switch-slider rect {
+    fill: #000000 !important;
+    stroke: white;
+}
+
+ /* === OFF - X === */
+
+.vc-switch-container .vc-switch-slider path {
+    fill: var(--tokyo-midnight-red) !important;
+}
+
+ /* === ON - CHECK === */
+
+.vc-switch-container.vc-switch-checked .vc-switch-slider path {
+    fill: var(--tokyo-midnight-green) !important;
+}
+
+/* ======================================= */
+/*  USER PROFILE CARD - INNER BACKGROUND   */
+/* ======================================= */
+
+/* === NORMAL PROFILE CARDS === */
+
+.user-profile-popout .inner_c0bea0:not(.custom-user-profile-theme) {
+
+    background: var(--tokyo-midnight-bg-panels) !important;
+    border: 1px solid var(--tokyo-midnight-border);
+    box-shadow: 0 0 18px rgba(129,252,166,.08);
+    backdrop-filter: blur(10px);
+}
+
+/* === OPTIONAL: KEEP NITRO CARDS CLEAN === */
+
+.custom-user-profile-theme {
+
+    backdrop-filter: blur(6px);
+}
+
+/* == DISABLES THE UI OVERLAY FROM CLICKING ON A SPECIFIC ELEMENTS (POP UPS) === */
+.clickTrapContainer__59d0d.trapClicks__59d0d {
+    pointer-events: none !important;
+}
+
+
+/* ======================================= */
+/*       MENTIONED MESSAGE HIGHLIGHT       */
+/* ======================================= */
+
+.message__5126c.selected__5126c {
+
+    background: #6fff4714 !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+.mentioned__5126c {
+background: #47ff7215;
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+.mentioned__5126c::before {
+   background:  #6fff475a;
+}
+
+/* === CHAT = EMBED VIDEO PROGRESS BAR === */
+.mediaBarProgress_b26b79 {
+background: var(--tokyo-midnight-custom3) !important;
+}
+
+/* === LEFT CAP === */
+
+.fakeEdges_b26b79::before {
+
+    background:
+        #81fca6 !important;
+}
+
+/* === NORMAL RIGHT CAP === */
+
+.fakeEdges_b26b79::after {
+
+    background: #0575e6 !important;
+    opacity: 1 !important;
+}
+
+/* ======================================= */
+/*      EMPTY PROGRESS RIGHT EDGE          */
+/* ======================================= */
+
+.mediaBarWrapper_b26b79.fakeEdges_b26b79:has(.mediaBarProgress_b26b79[style*="width: 0%"])::after {
+
+    background-color: var(--white) !important;
+    opacity: .3 !important;
+}
+
+/* ==== EMBED VIDEO - TIMER === */
+
+.durationTimeWrapper_cf09d8 {
+
+    background: var(--tokyo-midnight-custom3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* === EMBED VIDEO - CONTROL BUTTONS === */
+.controlIcon_cf09d8 {
+    color: var(--tokyo-midnight-icons-2) !important;
+}
+
+/* === EMBED VIDEO - BUFFER === */
+.buffer_b26b79 {
+    background-color: var(--tokyo-midnight-green2);
 }
