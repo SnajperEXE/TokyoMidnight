@@ -2306,3 +2306,41 @@ background-color: var(--tokyo-midnight-icons);
   color: var(--tokyo-midnight-black) !important; /* Changed the message date to black to make the date visible */
   font-weight: 700 !important; /* Set the text to bold */
 }
+
+/* === JUMP TO PRESENT BAR === */
+
+.jumpToPresentBar__0f481 {
+    background: rgba(113, 254, 167, 0.08) !important;
+    border: 1px solid rgba(113, 254, 167, 0.15) !important;
+    backdrop-filter: blur(8px);
+}
+
+/* === JUMP TO PRESENT TEXT === */
+.barButtonMain__0f481 {
+    color: #71fea7;
+    font-weight: 700;
+}
+
+[class*="jumpToPresentBar"] [class*="buttonChildrenWrapper"] {
+  color: var(--tokyo-midnight-text-normal) !important;
+  font-weight: 700;
+  }
+
+/* === MESSAGE REACTION - ICONS === */
+  .icon_f84418 {
+    color: var(--tokyo-midnight-icons);
+}
+
+/* === MESSAGE REACTION MENU === */
+.popover_f84418.popover_f84418 {
+  background-color: var(--tokyo-midnight-bg-sidebars);
+  border: 2px solid var(--tokyo-midnight-green);
+  filter: drop-shadow(0 0 10px rgba(29, 202, 58, 0.485));
+  }
+
+  /* === MESSAGE REACTION MENU - HOVER === */
+.popover_f84418.popover_f84418:hover {
+  background-color: var(--tokyo-midnight-bg-sidebars);
+  border: 2px solid var(--tokyo-midnight-green2);
+  filter: drop-shadow(0 0 10px rgba(10, 167, 44, 0.558));
+  }
