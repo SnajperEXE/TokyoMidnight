@@ -2366,3 +2366,30 @@ background-color: var(--tokyo-midnight-icons);
 .embedDescription__623de {
 color: #83f9ba !important; /* Changes the text of the description inside Embed Messages */
 }
+
+* === "Leaving DIscord" Container === */
+.container__8a031 {
+background: var(--tokyo-midnight-bg-panels);
+}
+
+.container__8a031 .buttonChildrenWrapper_a22cb0 {
+  border: 2px dotted rgba(154, 255, 167, 0.896);
+}
+
+.container__8a031 .icon_a22cb0 {
+  color: var(--tokyo-midnight-icons) !important;
+}
+
+.container__8a031 .heading-lg\/semibold_cf4812 {
+  color: var(--tokyo-midnight-text-header) !important;
+}
+
+/* Modal text */
+.container__8a031 .text-md\/normal_cf4812 {
+    color: var(--tokyo-midnight-text-normal) !important;
+}
+
+/* URL preview text */
+.container__8a031 .linkCalloutContainer_ad9c52 .text-md\/normal_cf4812 {
+    color: var(--text-muted) !important;
+}
