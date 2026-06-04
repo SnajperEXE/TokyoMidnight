@@ -2378,10 +2378,6 @@ color: #83f9ba !important; /* Changes the text of the description inside Embed M
 background: var(--tokyo-midnight-bg-panels);
 }
 
-.container__8a031 .buttonChildrenWrapper_a22cb0 {
-  border: 2px dotted rgba(154, 255, 167, 0.896);
-}
-
 .container__8a031 .icon_a22cb0 {
   color: var(--tokyo-midnight-icons) !important;
 }
