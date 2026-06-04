@@ -2344,3 +2344,25 @@ background-color: var(--tokyo-midnight-icons);
   border: 2px solid var(--tokyo-midnight-green2);
   filter: drop-shadow(0 0 10px rgba(10, 167, 44, 0.558));
   }
+
+/* === APP BADGE  === */
+.botTag_c19a55 {
+  background: var(--tokyo-midnight-custom5); /* Changes the color of the background for APP badges next to Bots */
+  border: 1px solid #002d01a4 !important;
+  }
+
+
+.botText__82f07 {
+  color: var(--tokyo-midnight-black) !important; /* Changes the color of the "APP" text inside APP Badge */
+  font-weight: 700 !important;
+}
+
+/* === EMBED TITLE === */
+.markup__75297 a.embedTitle__623de {
+  color: var(--tokyo-midnight-green) !important; /* Changes the color of the title inside Embed messages */
+}
+
+/* === EMBED DESCRIPTION === */
+.embedDescription__623de {
+color: #83f9ba !important; /* Changes the text of the description inside Embed Messages */
+}
