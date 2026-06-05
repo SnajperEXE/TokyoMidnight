@@ -673,7 +673,7 @@ background-color: red !important;
 
 /* === VENCORD SETTINGS - THEME CARDS === */
 .vc-settings-quickActions-card {
-    background-color: var(--tokyo-midnight-gray) !important;
+    background-color: var(--tokyo-midnight-bg-panels) !important; /* Changed background to "panels" color instead of rely on single global color */
     border: 2px solid var(--tokyo-midnight-black) !important;
 }
 
