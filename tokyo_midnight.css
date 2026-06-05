@@ -2402,6 +2402,214 @@ background: var(--tokyo-midnight-bg-panels);
   color: var(--tokyo-midnight-black);
 }
 
+/* === FORUM - NEW POST COUNTER === */
+.channelInfo_c69b6d .text-xs\/semibold_cf4812 {
+  color: var(--tokyo-midnight-green) !important;
+  font-weight: 700;
+}
+
+/* Guilds - Scrollbar */
+.scroller_ef3116 {
+    padding-bottom: 25px;
+}
+
+.wrapper__6e9f8[data-list-item-id="guildsnav___home"] img {
+    opacity: 0;
+}
+
+.wrapper__6e9f8[data-list-item-id="guildsnav___home"] .childWrapper__6e9f8::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--tokyo-midnight-home-logo) center/contain no-repeat;
+    background-size: 160%;
+}
+
+/* === Activity Panel === */
+.activityPanel__5e434 {
+background-color: var(--tokyo-midnight-bg-sidebars);
+border: 1px solid #2b2a3a !important;
+}
+
+/* === FORUM - BACKGROUND === */
+.list_f369db {
+  background-color: var(--tokyo-midnight-bg-main);
+}
+
+/* === FORUM - POSTS === */
+.container_faa96b:not(.mainCardContainer_f369db) {
+  background-color: var(--tokyo-midnight-bg-sidebars);
+  border: 1px solid var(--tokyo-midnight-main2) !important;
+}
+
+/* === FORUM - POST TITLE === */
+.postTitleText_faa96b {
+color: var(--tokyo-midnight-text-header) !important
+}
+
+/* === FORUM = POST DESCRIPTION */
+.messageContent_faa96b {
+color: var(--tokyo-midnight-text-normal);
+}
+
+.container_faa96b .text-sm\/normal_cf4812 {
+    background: var(--tokyo-midnight-custom3) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.popout__76f04 {
+  background-color: var(--tokyo-midnight-bg-panels);
+  border: 1px solid var(--tokyo-midnight-green);
+}
+
+/* === FORUM - REACTION (ME) === */
+.reaction_f8896c.reactionMe_f8896c {
+  background-color: #65d7743b;
+  border: 1px solid var(--tokyo-midnight-green);
+}
+
+.markup__75297 strong {
+    color: var(--tokyo-midnight-green) !important;
+}
+
+/* REPLY BAR - TEXT (Want to Make it easier...?) */
+.threadSuggestionBar__841c8 .text__841c8 {
+    background: var(--tokyo-midnight-custom3) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* ===REPLY BAR - CLOSE BUTTON === */
+[class*="closeIcon"] {
+  color: var(--tokyo-midnight-red);
+}
+
+/* === FORUM - SEARCH BAR */
+.container_d9be46 {
+border: 1px solid var(--tokyo-midnight-border);
+border-radius: 8px;
+}
+
+/* SEARCH - NEW POST BUTTON */
+.container_d9be46 button:not([aria-label="Post Guidelines"]) .buttonChildrenWrapper_a22cb0 {
+  color: var(--tokyo-midnight-text-header);
+  border: 1px solid var(--tokyo-midnight-border-strong);
+}
+
+/* === FORUM - GUIDELINES BUTTON */
+button[aria-label="Post Guidelines"] .icon_a22cb0 {
+    color: var(--tokyo-midnight-green) !important;
+}
+
+/* === FORUM - SEARCH TEXT */
+.title_d9be46::placeholder {
+    color: var(--tokyo-midnight-green) !important;
+}
+
+/* VENCORD - ERROR CARD */
+.vc-error-card {
+background: var(--tokyo-midnight-critical-gradient) !important;
+border: 2px dashed #ff5566 !important;
+color: #ffa8b6;
+border-radius: 20px;
+}
+
+/* Leave '<Server>' - Leave Server Button */
+.container__8a031 .critical-primary_a22cb0 {
+    color: var(--tokyo-midnight-text-normal) !important;
+    border: 1px solid var(--tokyo-midnight-border) !important;
+    background-color: #262628 !important;
+}
+
+/* ========================== */
+/* TOKYO MIDNIGHT CHECKBOXES */
+/* ========================== */
+
+/* CHECKED */
+.checkboxOption__714a9[data-selected="true"] .checkboxIndicator__714a9 {
+    background: var(--tokyo-midnight-green) !important;
+}
+
+.checkboxOption__714a9[data-selected="true"] .checkStroke__714a9,
+.checkboxOption__714a9[data-selected="true"] .checkmark__714a9 {
+    color: var(--tokyo-midnight-black) !important;
+}
+
+/* UNCHECKED */
+.checkboxOption__714a9:not([data-selected="true"]) .checkboxIndicator__714a9 {
+    background: #d83a3a !important;
+    position: relative;
+}
+
+/* Hide Discord's original checkmark when unchecked */
+.checkboxOption__714a9:not([data-selected="true"]) .checkStroke__714a9,
+.checkboxOption__714a9:not([data-selected="true"]) .checkmark__714a9 {
+    opacity: 0 !important;
+}
+
+/* Fake X */
+.checkboxOption__714a9:not([data-selected="true"]) .checkboxIndicator__714a9::before,
+.checkboxOption__714a9:not([data-selected="true"]) .checkboxIndicator__714a9::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 10px;
+    height: 2px;
+
+    background: var(--tokyo-midnight-black);
+
+    border-radius: 2px;
+}
+
+.checkboxOption__714a9:not([data-selected="true"]) .checkboxIndicator__714a9::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.checkboxOption__714a9:not([data-selected="true"]) .checkboxIndicator__714a9::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* === DIRECT MESSAGES - MEMBER SIDEBAR PROFILE */
+.user-profile-sidebar .inner_c0bea0 {
+  background: var(--tokyo-midnight-bg-panels);
+}
+/* === DIRECT MESSAGES - MEMBER SIDEBAR MEMBER SINCE */
+.overlay_b32ca4 {
+background: #18191e;
+  border: 1px solid rgba(127, 127, 255, 0.136);
+}
+
+/* === DIRECT MESSAGES - MEMBER SIDEBAR FOOTER */
+.footerButton__272c7:after {
+  background-color: var(--tokyo-midnight-bg-panels);
+}
+
+.container__0d0f9:hover .progress__0d0f9 {
+  background: var(--tokyo-midnight-opal) !important
+}
+
+.progressContainer__0d0f9 {
+  transform: none !important;
+}
+
+/* EMBED MESSAGE - USER MENTION */
+.wrapper_f61d60 {
+  background: rgba(137, 255, 151, 0.382);
+  color: var(--tokyo-midnight-black);
+  font-weight: 700;
+}
+
+.wrapper_f61d60:hover {
+  background: rgba(86, 220, 93, 0.415) !important;
+  color: var(--tokyo-midnight-black) !important;
+}
 /* Checkmark */
 .botTagVerified__82f07 path {
 fill: var(--tokyo-midnight-black);
