@@ -2,49 +2,135 @@
 /* @name TokyoMidnight MemberList
 * @author SnajperEXE
 * @version 1.0.0
-* @description Smart smooth collapsing member list addon for TokyoMidnight. */
+* @description Compact member list with smooth hover expansion.
+
+/* TOKYO MIDNIGHT MEMBER LIST */
+
+/* ---------- WRAPPER ---------- */
 
 [class*="membersWrap_"] {
 
-    min-width:
-        18px !important;
-
     width:
-        18px !important;
+        var(--tokyo-member-width) !important;
+
+    min-width:
+        0 !important;
 
     overflow:
-        hidden !important;
+        hidden;
+
+    transform:
+        translateX(
+            calc(
+                var(--tokyo-member-width)
+                -
+                var(--tokyo-member-collapsed)
+            )
+        );
 
     transition:
-        width 0.35s cubic-bezier(0.4,0,0.2,1) !important;
+        transform var(--tokyo-member-transition);
 
-    box-sizing:
-        border-box !important;
+    will-change:
+        transform;
 }
 
-[class*="membersWrap_"]:hover {
+/* ---------- OPEN ---------- */
+
+[class*="membersWrap_"]:hover,
+[class*="membersWrap_"]:focus-within {
+
+    transform:
+        translateX(0);
+}
+
+/* ---------- MEMBER PANEL ---------- */
+
+[class*="members_"] {
 
     width:
-        240px !important;
-}
+        var(--tokyo-member-width) !important;
 
-[class*="membersWrap_"] [class*="members_"] {
+    border-left:
+        1px solid var(--tokyo-midnight-border);
 
-    opacity:
-        0;
+    backdrop-filter:
+        blur(10px);
 
     transition:
-        opacity 0.2s ease;
+        backdrop-filter .3s ease;
 }
 
-[class*="membersWrap_"]:hover [class*="members_"] {
+/* ---------- MEMBER ROW ---------- */
 
-    opacity:
-        1;
+[class*="member_"] {
+
+    transition:
+        opacity .25s ease,
+        transform .35s ease,
+        filter .35s ease;
 }
 
-[class*="membersGroup_"] {
+/* ---------- COLLAPSED STATE ---------- */
 
-    padding-left:
-        15px !important;
+[class*="membersWrap_"] [class*="memberInner_"],
+[class*="membersWrap_"] [class*="layout_"] {
+
+    transform:
+        translateX(4px);
+}
+
+/* ---------- USERNAMES ---------- */
+
+[class*="membersWrap_"] [class*="name_"] {
+
+    opacity: 0;
+
+    filter:
+        blur(3px);
+
+    transition:
+        opacity .28s ease,
+        filter .35s ease,
+        transform .35s ease;
+
+    transform:
+        translateX(12px);
+}
+
+/* ---------- ROLE HEADERS ---------- */
+
+[class*="membersWrap_"] [class*="membersGroup_"] {
+
+    opacity: 0;
+
+    transform:
+        translateX(12px);
+
+    transition:
+        opacity .25s ease,
+        transform .35s ease;
+}
+
+/* ---------- EXPANDED ---------- */
+
+[class*="membersWrap_"]:hover [class*="name_"],
+[class*="membersWrap_"]:focus-within [class*="name_"] {
+
+    opacity: 1;
+
+    filter:
+        blur(0);
+
+    transform:
+        translateX(0);
+}
+
+[class*="membersWrap_"]:hover [class*="membersGroup_"],
+[class*="membersWrap_"]:focus-within [class*="membersGroup_"] {
+
+    opacity: 1;
+
+    transform:
+        translateX(0);
 }
