@@ -4,183 +4,47 @@
 * @version 1.0.0
 * @description Smart smooth collapsing member list addon for TokyoMidnight. */
 
-/* ========================== */
-/*       MEMBER LIST          */
-/* ========================== */
-
-/* ---------- SETTINGS ---------- */
-
-:root {
-    --tokyo-memberlist-enabled: 1;
-
-    --tokyo-memberlist-width: 240px;
-    --tokyo-memberlist-collapsed: 50px;
-    --tokyo-memberlist-sensor-width: 20px;
-
-    --tokyo-memberlist-offset:
-        calc(var(--tokyo-memberlist-width) - var(--tokyo-memberlist-collapsed));
-
-    --tokyo-member-opacity:
-        calc(1 - (.08 * var(--tokyo-memberlist-enabled)));
-
-    --tokyo-membergroup-opacity:
-        calc(1 - (.30 * var(--tokyo-memberlist-enabled)));
-}
-
-/* ---------- WRAPPER ---------- */
-
 [class*="membersWrap_"] {
-    min-width: 0 !important;
-    position: relative;
 
-    width: var(--tokyo-memberlist-width) !important;
-
-    transform:
-        translate3d(var(--tokyo-memberlist-offset), 0, 0);
-
-    transition:
-        transform .38s cubic-bezier(0.25, 1, 0.5, 1) !important;
-
-    will-change: transform;
-}
-
-/* ---------- OPEN ---------- */
-
-[class*="membersWrap_"]:hover,
-[class*="membersWrap_"]:focus-within {
-    transform: translate3d(0,0,0);
-}
-
-/* ---------- SENSOR ---------- */
-
-[class*="membersWrap_"]::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-
-    left:
-        calc(-1 * var(--tokyo-memberlist-sensor-width));
+    min-width:
+        18px !important;
 
     width:
-        calc(var(--tokyo-memberlist-sensor-width) + 40px);
+        18px !important;
 
-    pointer-events: auto;
-    z-index: 10;
+    overflow:
+        hidden !important;
+
+    transition:
+        width 0.35s cubic-bezier(0.4,0,0.2,1) !important;
+
+    box-sizing:
+        border-box !important;
 }
 
-/* ---------- PANEL ---------- */
+[class*="membersWrap_"]:hover {
+
+    width:
+        240px !important;
+}
 
 [class*="membersWrap_"] [class*="members_"] {
-    width: var(--tokyo-memberlist-width) !important;
 
-    overflow: hidden;
-    position: relative;
-
-    border-left:
-        1px solid var(--tokyo-midnight-border);
-
-    box-shadow:
-        inset 1px 0 rgba(129,252,166,.04),
-        -2px 0 12px rgba(0,0,0,.45);
-
-    backdrop-filter:
-        blur(10px)
-        brightness(.94)
-        saturate(.82);
+    opacity:
+        0;
 
     transition:
-        backdrop-filter .36s ease,
-        border-color .24s ease,
-        box-shadow .28s ease !important;
+        opacity 0.2s ease;
 }
 
-/* ---------- EDGE FADE ---------- */
+[class*="membersWrap_"]:hover [class*="members_"] {
 
-[class*="membersWrap_"] [class*="members_"]::after {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-
-    width: 48px;
-
-    pointer-events: none;
-
-    background: var(--tokyo-member-fade);
-
-    opacity: var(--tokyo-memberlist-enabled);
-
-    transition: opacity .32s ease;
+    opacity:
+        1;
 }
 
-/* ---------- OPEN EFFECT ---------- */
+[class*="membersGroup_"] {
 
-[class*="membersWrap_"]:hover [class*="members_"],
-[class*="membersWrap_"]:focus-within [class*="members_"] {
-
-    border-left: 1px solid transparent;
-
-    box-shadow: none;
-
-    backdrop-filter:
-        blur(14px)
-        brightness(1)
-        saturate(1);
-}
-
-[class*="membersWrap_"]:hover [class*="members_"]::after,
-[class*="membersWrap_"]:focus-within [class*="members_"]::after {
-    opacity: 0;
-}
-
-/* ---------- MEMBERS ---------- */
-
-[class*="membersWrap_"] [class*="member_"] {
-
-    opacity: var(--tokyo-member-opacity);
-
-    filter: saturate(.82);
-
-    transition:
-        opacity .24s ease,
-        filter .32s ease !important;
-}
-
-[class*="membersWrap_"]:hover [class*="member_"],
-[class*="membersWrap_"]:focus-within [class*="member_"] {
-
-    opacity: 1;
-
-    filter: saturate(1);
-}
-
-/* ---------- ROLE LABELS ---------- */
-
-[class*="membersWrap_"] [class*="membersGroup_"] {
-
-    overflow: hidden;
-
-    white-space: nowrap;
-
-    text-overflow: clip;
-
-    opacity: var(--tokyo-membergroup-opacity);
-
-    transition:
-        opacity .28s ease,
-        letter-spacing .32s ease !important;
-}
-
-[class*="membersWrap_"]:hover [class*="membersGroup_"],
-[class*="membersWrap_"]:focus-within [class*="membersGroup_"] {
-
-    opacity: 1;
-
-    letter-spacing: .02em;
+    padding-left:
+        15px !important;
 }
