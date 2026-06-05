@@ -2692,3 +2692,56 @@ fill: var(--tokyo-midnight-black);
 .container__37e49 {
 background: oklab(0.18 0 -0.01) !important
 }
+
+/* === DIRECT MESSAGES - FOOTER */
+.privateChannels_e6b769 {
+    background-color: var(--tokyo-midnight-bg-panels);
+}
+
+.scroller__7d20c {
+border-inline-start: #0b0b14 !important;
+}
+
+/* == ADD A FRIEND X4 - BUTTON === */
+.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf {
+    background: linear-gradient(55deg,rgba(87, 255, 143, 1) 0%, rgba(18, 222, 89, 1) 100%);
+    color: hsl(237, 90%, 4%) !important;
+    font-weight: 600;
+}
+
+/* === ONLINE FRIENDS - ACTION BUTTONS === */
+.actionButton_f8fa06 {
+    background-color: #1fb70ed3;
+    color: rgb(0, 2, 27);
+}
+
+/* === ONLINE FRIENDS - ACTION BUTTONS - HOVER === */
+.actionButton_f8fa06:hover {
+    background-color: #189a09d3;
+    color: rgb(1, 2, 23);
+}
+
+.actionButton_f8fa06.highlight_f8fa06 {
+    background-color: #1f903ad3;
+    color: rgb(3, 4, 29);
+}
+/* === GO TO SETTINGS - TEXT === */
+.anchor_edefb8 {
+color: rgb(86, 246, 86) !important;
+text-shadow: 0 0 10px rgba(51, 215, 95, 0.878);
+}
+
+/* === ONLINE TEXT === */
+.title__1472a {
+    color: rgb(104, 240, 95);
+}
+
+/* === FRIENDS - HEADER === */
+.tabBar__133bf .item__133bf {
+    color: rgb(101, 221, 101) !important;
+}
+
+/* DIRECT MESSAGES - TEXT === */
+.headerText__99e7c {
+    color: rgb(92, 227, 107);
+}
