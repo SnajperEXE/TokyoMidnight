@@ -2614,3 +2614,81 @@ background: #18191e;
 .botTagVerified__82f07 path {
 fill: var(--tokyo-midnight-black);
 }
+
+/* === PINNED MESSAGES - MESSAGES INNER === */
+.messagesPopout_e8b59c {
+    background: var(--tokyo-midnight-bg-panels) !important;   
+    border-left: 1px solid rgb(49, 173, 49);
+    border-right: 1px solid rgb(49, 173, 49);
+    border-bottom: 1px solid rgb(49, 173, 49);
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important
+}
+
+/* === PINNED MESSAGES - WRAPPER === */
+.messageGroupWrapper_e8b59c {
+    background: var(--tokyo-midnight-bg-sidebars);
+    border: 1px solid #0c6d12;
+}
+
+/* === PINNED MESSAGES = ATTACHMENTS === */
+.file__0ccae { /* If the pinned message contains the attachements (files) it will change to the colors below */
+    background-color: var(--tokyo-midnight-bg-panels) !important;
+    border: 1px solid rgba(133, 226, 140, 0.682);
+}
+/* === FORWARDED MESSAGE BAR === */
+
+.quote__122e4 { /* If the message contains "quotes" changes it to nice mint color with a subtle green glow */
+    background-color: rgb(59, 193, 65);
+    box-shadow: 0 0 10px rgba(62, 209, 86, 0.595);
+}
+
+/* === JUMP BUTTON */
+.messageGroupWrapper_e8b59c .buttonChildrenWrapper_a22cb0 {
+    background-color: rgb(92, 237, 102);
+    color: black;
+    font-weight: 700 !important;
+    box-shadow: 0 0 10px rgba(110, 204, 110, 0.648);
+}
+
+/* === PINNED MESSAGE - HEADER === */
+.header_e8b59c {
+    background-color: var(--tokyo-midnight-bg-panels);
+    border-left: 1px solid rgb(49, 173, 49);
+    border-top: 1px solid rgb(49, 173, 49);
+    border-right: 1px solid rgb(49, 173, 49);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* === PINNED MESSAGES - HEADER TEXT */
+.header_e8b59c .text-lg\/semibold_cf4812 {
+    color: rgb(49, 173, 49) !important;
+}
+
+/* === PIN - ARE YOU SURE? POP UP === */
+.container__8a031 {
+    background: var(--tokyo-midnight-bg-panels);
+    border: 1px solid rgb(49, 173, 49) !important;
+}
+
+/* === QUOTED MESSAGE === */
+.blockquoteDivider__75297 {
+    background-color: #47c843dc;
+    box-shadow: 0 0 10px rgba(79, 230, 122, 0.734);
+}
+
+/* === PIN ICON === */
+.iconContainer__235ca svg {
+    color: rgb(49, 173, 49) !important;
+}
+
+/* === PINNED MESSAGES - PIN ICON === */
+.header_e8b59c .iconContainer__235ca svg {
+    color: rgb(49, 173, 49) !important;
+}
+
+/* USER PANEL - BLEEDING TEXT FIX */
+.container__37e49 {
+background: oklab(0.18 0 -0.01) !important
+}
