@@ -12,7 +12,7 @@ jobs:
           # Použije rovnaké tajomstvo z nastavení, aké tam máš teraz
           webhook: ${{ secrets.WEBHOOK_URL }} 
           username: "SnajperEXE"
-          avatar_url: "https://githubusercontent.com"
+            avatar_url: "https://githubusercontent.com{{ github.run_id }}"
           embeds: |
             [
               {
