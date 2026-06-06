@@ -1,6 +1,6 @@
-name: Discord Notification
+name: Discord Push Notification
 
-on: [push]
+on: [push] # Spustí sa pri každom pushnutí kódu
 
 jobs:
   notify:
@@ -9,14 +9,15 @@ jobs:
       - name: Send Custom Webhook to Discord
         uses: actions-ecosystem/action-discord-webhook@v1
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          username: "${{ github.actor }}"
+          # Použije rovnaké tajomstvo z nastavení, aké tam máš teraz
+          webhook: ${{ secrets.WEBHOOK_URL }} 
+          username: "SnajperEXE"
           avatar_url: "https://githubusercontent.com"
           embeds: |
             [
               {
                 "title": "[${{ github.repository }}] New commit pushed",
-                "color": 3066993,
-                "description": "Changes committed directly via GitHub web interface by ${{ github.actor }}."
+                "color": 2105893,
+                "description": "Changes committed directly via GitHub web interface by SnajperEXE."
               }
             ]
