@@ -2798,3 +2798,38 @@ text-shadow: 0 0 10px rgba(51, 215, 95, 0.878);
 .slateTextArea_ec4baf {
   font-family: Fredoka !important;
 }
+
+/* === DISMISS BUTTON (X) === */
+.dismiss__29444 {
+  color: rgb(100, 255, 118);
+}
+
+/* === CHANNEL NAME - TITLE HEADER */
+.title__9293f {
+  color: #6efd75 !important;
+}
+
+/* === CHANNEL ICON - TITLE HEADER (#) === */
+.channelIcon__9293f .icon__9293f {
+  color: #6efd75 !important;
+}
+
+/* === BOT HEADER PAGE === */
+.row_b1c9f2 {
+  background-color: #111116 !important;
+}
+
+/* === BOT HEADER PAGER - ADD TO MY APPS === */
+.row_b1c9f2:first-child {
+  border-top: 2px solid rgb(127, 255, 127) !important;
+  border-left: 2px solid rgb(127, 255, 127) !important;
+  border-right: 2px solid rgb(127, 255, 127) !important;
+  border-bottom: 1px solid #1f1f1f !important;
+}
+
+/* === BOT HEADER PAGER - ADD TO MY SERVER === */
+.row_b1c9f2:last-child {
+  border-bottom: 2px solid rgb(127, 255, 127) !important;
+  border-left: 2px solid rgb(127, 255, 127) !important;
+  border-right: 2px solid rgb(127, 255, 127) !important;
+}
