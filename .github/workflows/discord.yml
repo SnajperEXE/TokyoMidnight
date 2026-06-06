@@ -6,9 +6,8 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Clean Native Embed to Discord
+      - name: Send Split Native Embed to Discord
         run: |
-          # Bezpečne vygenerujeme 7-miestny hash commitu do systémovej premennej
           export SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
           
           curl -H "Content-Type: application/json" \
@@ -22,9 +21,7 @@ jobs:
                        "name": "SnajperEXE",
                        "icon_url": "https://githubusercontent.com"
                      },
-                     "title": "['"${{ github.event.repository.name }}:${{ github.ref_name }}"'] 1 new commit",
-                     "color": 23296,
-                     "description": "`'"$SHORT_SHA"'` '"${{ github.event.head_commit.message }}"' - SnajperEXE"
+                     "description": "**['"${{ github.event.repository.name }}:${{ github.ref_name }}"'] 1 new commit**\n\n`'"$SHORT_SHA"'` '"${{ github.event.head_commit.message }}"' - SnajperEXE"
                    }
                  ]
                }' \
