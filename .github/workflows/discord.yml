@@ -6,20 +6,17 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Commit Updates
-        uses: Sniddl/discord-commits@v1.8
+      - name: Send Custom Webhook to Discord
+        uses: actions-ecosystem/action-discord-webhook@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          # 1. We switch the template to a completely manual layout
-          template: "custom" 
-          # 2. We build the exact embed structure we want
-          embed: |
-            {
-              "title": "[{{ repository.name }}:{{ ref }}] {{ commits.length }} new commit(s)",
-              "color": 3066993,
-              "author": {
-                "name": "${{ github.actor }}",
-                "icon_url": "https://github.com{{ github.actor }}.png"
-              },
-              "description": "{{#commits}}`{{id}}` {{message}} - {{author.name}}\n{{/commits}}"
-            }
+          username: "${{ github.actor }}"
+          avatar_url: "https://githubusercontent.com"
+          embeds: |
+            [
+              {
+                "title": "[${{ github.repository }}] New commit pushed",
+                "color": 3066993,
+                "description": "Changes committed directly via GitHub web interface by ${{ github.actor }}."
+              }
+            ]
