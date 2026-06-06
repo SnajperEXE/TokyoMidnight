@@ -11,3 +11,5 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           template: "avatar-with-link"
+          # This forces it to use your active GitHub profile picture:
+          fallback-avatar: "https://github.com{{ github.actor }}.png" 
