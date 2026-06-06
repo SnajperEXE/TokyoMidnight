@@ -1,31 +1,26 @@
 name: Discord Push Notification
 
-on: [push] # Spúšťa sa striktne iba pri pushnutí/commite kódu
+on: [push]
 
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Direct Native Embed to Discord
-        run: |
-          # Vytvoríme si čistý 7-miestny hash commitu
-          SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
-          
-          curl -H "Content-Type: application/json" \
-               -X POST \
-               -d "{
-                 \"username\": \"SnajperEXE\",
-                 \"avatar_url\": \"https://githubusercontent.com\",
-                 \"embeds\": [
-                   {
-                     \"author\": {
-                       \"name\": \"SnajperEXE\",
-                       \"icon_url\": \"https://githubusercontent.com\"
-                     },
-                     \"title\": \"[${{ github.event.repository.name }}:${{ github.ref_name }}] 1 new commit\",
-                     \"color\": 23296,
-                     \"description\": \"\`$SHORT_SHA\` ${{ github.event.head_commit.message }} - SnajperEXE\"
-                   }
-                 ]
-               }" \
-               ${{ secrets.WEBHOOK_URL }}
+      - name: Send Clean Native Embed to Discord
+        uses: actions-ecosystem/action-discord-webhook@v1
+        with:
+          webhook: ${{ secrets.WEBHOOK_URL }}
+          username: "SnajperEXE"
+          avatar_url: "https://githubusercontent.com"
+          embeds: |
+            [
+              {
+                "author": {
+                  "name": "SnajperEXE",
+                  "icon_url": "https://githubusercontent.com"
+                },
+                "title": "[${{ github.event.repository.name }}:${{ github.ref_name }}] 1 new commit",
+                "color": 23296,
+                "description": "`${{ github.sha }}` ${{ github.event.head_commit.message }} - SnajperEXE"
+              }
+            ]
