@@ -1,6 +1,6 @@
 name: Discord Push Notification
 
-on: [push]
+on: [push] # Spúšťa sa striktne iba pri pushnutí/commite kódu
 
 jobs:
   notify:
@@ -8,6 +8,7 @@ jobs:
     steps:
       - name: Send Direct Native Embed to Discord
         run: |
+          # Vytvoríme si čistý 7-miestny hash commitu
           SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
           
           curl -H "Content-Type: application/json" \
