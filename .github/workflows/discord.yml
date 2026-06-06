@@ -9,6 +9,7 @@ jobs:
       - name: Send Clean Native Embed to Discord
         env:
           USER_NAME: ${{ github.actor }}
+          USER_ID: ${{ github.actor_id }}
           REPO_NAME: ${{ github.event.repository.name }}
           BRANCH_NAME: ${{ github.ref_name }}
           COMMIT_MSG: ${{ github.event.head_commit.message }}
@@ -19,12 +20,12 @@ jobs:
                -X POST \
                -d "{
                  \"username\": \"$USER_NAME\",
-                 \"avatar_url\": \"https://github.com\",
+                 \"avatar_url\": \"https://githubusercontent.com\",
                  \"embeds\": [
                    {
                      \"author\": {
                        \"name\": \"$USER_NAME\",
-                       \"icon_url\": \"https://github.com\"
+                       \"icon_url\": \"https://githubusercontent.com\"
                      },
                      \"description\": \"**[$REPO_NAME:$BRANCH_NAME] 1 new commit**\n\n\`$SHORT_SHA\` $COMMIT_MSG - $USER_NAME\"
                    }
