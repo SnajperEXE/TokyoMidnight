@@ -10,6 +10,16 @@ jobs:
         uses: Sniddl/discord-commits@v1.8
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          template: "avatar-with-link"
-          # This forces it to use your active GitHub profile picture:
-          fallback-avatar: "https://github.com{{ github.actor }}.png" 
+          # 1. We switch the template to a completely manual layout
+          template: "custom" 
+          # 2. We build the exact embed structure we want
+          embed: |
+            {
+              "title": "[{{ repository.name }}:{{ ref }}] {{ commits.length }} new commit(s)",
+              "color": 3066993,
+              "author": {
+                "name": "${{ github.actor }}",
+                "icon_url": "https://github.com{{ github.actor }}.png"
+              },
+              "description": "{{#commits}}`{{id}}` {{message}} - {{author.name}}\n{{/commits}}"
+            }
