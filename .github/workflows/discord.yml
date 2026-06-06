@@ -8,17 +8,20 @@ jobs:
     steps:
       - name: Send Direct Native Embed to Discord
         run: |
+          # Vygenerujeme si krátky 7-miestny hash commitu bezpečne vopred
+          SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
+          
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d '{
-                 "username": "SnajperEXE",
-                 "avatar_url": "https://githubusercontent.com",
-                 "embeds": [
+               -d "{
+                 \"username\": \"SnajperEXE\",
+                 \"avatar_url\": \"https://githubusercontent.com\",
+                 \"embeds\": [
                    {
-                     "title": "[${{ github.event.repository.name }}:${{ github.ref_name }}] 1 new commit",
-                     "color": 23296,
-                     "description": "`'${GITHUB_SHA::7}'` ${{ github.event.head_commit.message }} - SnajperEXE"
+                     \"title\": \"[${{ github.event.repository.name }}:${{ github.ref_name }}] 1 new commit\",
+                     \"color\": 23296,
+                     \"description\": \"\`$SHORT_SHA\` ${{ github.event.head_commit.message }} - SnajperEXE\"
                    }
                  ]
-               }' \
+               }" \
                ${{ secrets.WEBHOOK_URL }}
