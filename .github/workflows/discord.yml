@@ -6,12 +6,19 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Discord Message
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          SLACK_WEBHOOK: ${{ secrets.WEBHOOK_URL }}
-          SLACK_USERNAME: "SnajperEXE"
-          SLACK_AVATAR: "https://githubusercontent.com"
-          SLACK_COLOR: "#2e7d32"
-          SLACK_TITLE: "Nový kód bol nahraný!"
-          SLACK_MESSAGE: "Commit: ${{ github.event.head_commit.message }}\nAutor: ${{ github.actor }}"
+      - name: Send Message Directly to Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d '{
+                 "username": "SnajperEXE",
+                 "avatar_url": "https://githubusercontent.com",
+                 "embeds": [
+                   {
+                     "title": "[${{ github.repository }}] New commit pushed",
+                     "color": 2105893,
+                     "description": "Changes committed directly via GitHub web interface by ${{ github.actor }}."
+                   }
+                 ]
+               }' \
+               ${{ secrets.WEBHOOK_URL }}
