@@ -6,23 +6,28 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Split Native Embed to Discord
+      - name: Send Clean Native Embed to Discord
+        env:
+          USER_NAME: ${{ github.actor }}
+          REPO_NAME: ${{ github.event.repository.name }}
+          BRANCH_NAME: ${{ github.ref_name }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
-          export SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
+          SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
           
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d '{
-                 "username": "'"${{ github.actor }}"'",
-                 "avatar_url": "https://github.com'"${{ github.actor }}"'.png",
-                 "embeds": [
+               -d "{
+                 \"username\": \"$USER_NAME\",
+                 \"avatar_url\": \"https://github.com\",
+                 \"embeds\": [
                    {
-                     "author": {
-                       "name": "'"${{ github.actor }}"'",
-                       "icon_url": "https://github.com'"${{ github.actor }}"'.png"
+                     \"author\": {
+                       \"name\": \"$USER_NAME\",
+                       \"icon_url\": \"https://github.com\"
                      },
-                     "description": "**['"${{ github.event.repository.name }}:${{ github.ref_name }}"'] 1 new commit**\n\n`'"$SHORT_SHA"'` '"${{ github.event.head_commit.message }}"' - '"${{ github.actor }}"'"
+                     \"description\": \"**[$REPO_NAME:$BRANCH_NAME] 1 new commit**\n\n\`$SHORT_SHA\` $COMMIT_MSG - $USER_NAME\"
                    }
                  ]
-               }' \
+               }" \
                ${{ secrets.WEBHOOK_URL }}
