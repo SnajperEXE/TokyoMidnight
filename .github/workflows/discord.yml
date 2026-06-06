@@ -13,15 +13,15 @@ jobs:
           curl -H "Content-Type: application/json" \
                -X POST \
                -d '{
-                 "username": "SnajperEXE",
-                 "avatar_url": "https://githubusercontent.com",
+                 "username": "${{ github.actor }}",
+                 "avatar_url": "[github.com](https://github.com/${{) github.actor }}.png",
                  "embeds": [
                    {
                      "author": {
-                       "name": "SnajperEXE",
-                       "icon_url": "https://githubusercontent.com"
+                       "name": "${{ github.actor }}",
+                       "icon_url": "[github.com](https://github.com/${{) github.actor }}.png"
                      },
-                     "description": "**['"${{ github.event.repository.name }}:${{ github.ref_name }}"'] 1 new commit**\n\n`'"$SHORT_SHA"'` '"${{ github.event.head_commit.message }}"' - SnajperEXE"
+                     "description": "**[${{ github.event.repository.name }}:${{ github.ref_name }}] 1 new commit**\n\n`'"$SHORT_SHA"'` ${{ github.event.head_commit.message }} - ${{ github.actor }}"
                    }
                  ]
                }' \
