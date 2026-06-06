@@ -2745,3 +2745,56 @@ text-shadow: 0 0 10px rgba(51, 215, 95, 0.878);
 .headerText__99e7c {
     color: rgb(92, 227, 107);
 }
+
+/* === SWITCHES (Not Vencord ones) === */
+
+/* OFF */
+.switchIndicator_a28278[style*="background-color: rgba(0, 0, 0, 0.12)"] {
+    background-color: #ec1111 !important;
+}
+
+/* ON */
+.switchIndicator_a28278[style*="background-color: rgb(88, 101, 242)"] {
+    background-color: #2af72a !important;
+}
+
+/* === SWITCH THUMB === */
+.switchIndicator_a28278 .thumb_a28278 rect {
+    fill: #000 !important;          /* Thumb color */
+    stroke: #fff !important;        /* Border color */
+    stroke-width: 2px !important;   /* Border thickness */
+}
+
+/* === NEW UNREADS === */
+.unread__3b95d { /* Ćhanges the background color of the Unreads in the channel list */
+  background-color: rgba(113, 254, 151, 0.177) !important; /* Because why not? */
+  backdrop-filter: blur(5px) !important; /* Nice touche mate */
+  z-index: 9999; /* This fixes absolutely nothing */
+}
+
+/* === NEW BADGE === */
+.baseShapeRound__2b1f5 { /* Appears next to the suggested channel name and next to "Channels & Roles" */
+  background: linear-gradient(90deg, #84f86f 0%, #73ff9a 100%) !important; /* Changes the gradient to mint-green color to match the theme */
+  color: rgb(0, 6, 28) !important; /* Changed to midnight-black color, for better readability */
+}
+
+/* CHANNEL LIST - FONT === */
+.scroller__629e4 {
+    font-family: 'Kalam' !important;
+}
+
+/* === MEMBER LIST - NAME FONT === */
+[class*="membersWrap_"] [class*="name_"] {
+  font-family: 'Electrolize' !important;
+}
+
+/* === CHAT - FONT === */
+.cozy_c19a55 .messageContent_c19a55 {
+    font-family: 'Fredoka' !important;
+    font-size: 17px;
+}
+
+/* === CHAT - PLACEHOLDER FONT === */
+.slateTextArea_ec4baf {
+  font-family: Fredoka !important;
+}
