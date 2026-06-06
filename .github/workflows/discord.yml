@@ -1,23 +1,17 @@
 name: Discord Push Notification
 
-on: [push] # Spustí sa pri každom pushnutí kódu
+on: [push]
 
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Custom Webhook to Discord
-        uses: actions-ecosystem/action-discord-webhook@v1
-        with:
-          # Použije rovnaké tajomstvo z nastavení, aké tam máš teraz
-          webhook: ${{ secrets.WEBHOOK_URL }} 
-          username: "SnajperEXE"
-            avatar_url: "https://githubusercontent.com{{ github.run_id }}"
-          embeds: |
-            [
-              {
-                "title": "[${{ github.repository }}] New commit pushed",
-                "color": 2105893,
-                "description": "Changes committed directly via GitHub web interface by SnajperEXE."
-              }
-            ]
+      - name: Send Discord Message
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.WEBHOOK_URL }}
+          SLACK_USERNAME: "SnajperEXE"
+          SLACK_AVATAR: "https://githubusercontent.com"
+          SLACK_COLOR: "#2e7d32"
+          SLACK_TITLE: "Nový kód bol nahraný!"
+          SLACK_MESSAGE: "Commit: ${{ github.event.head_commit.message }}\nAutor: ${{ github.actor }}"
