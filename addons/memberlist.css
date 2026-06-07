@@ -4,8 +4,6 @@
 * @version 1.0.0
 * @description Compact member list with smooth hover expansion.
 
-/* TOKYO MIDNIGHT MEMBER LIST */
-
 /* ---------- WRAPPER ---------- */
 
 [class*="membersWrap_"] {
@@ -52,7 +50,6 @@
         blur(10px);
 
     transition:
-        transform var(--tokyo-member-transition),
         backdrop-filter .3s ease;
 
     transform:
