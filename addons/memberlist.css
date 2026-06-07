@@ -10,13 +10,22 @@
     width: 48px !important;
     min-width: 48px !important;
     overflow: hidden;
-    transition: width 0.25s ease;
+
+    border-left: 1px solid rgba(87, 255, 143, 0.5);
+
+    transition:
+        width 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 [class*="membersWrap_"]:hover,
 [class*="membersWrap_"]:focus-within {
     width: var(--custom-member-list-width) !important;
     min-width: var(--custom-member-list-width) !important;
+
+    border-left-color: rgba(87, 255, 143, 1);
+    box-shadow: inset 1px 0 0 rgba(87, 255, 143, 0.2);
 }
 
 /* ---------- MEMBER PANEL ---------- */
