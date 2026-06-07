@@ -2833,3 +2833,137 @@ text-shadow: 0 0 10px rgba(51, 215, 95, 0.878);
   border-left: 2px solid rgb(127, 255, 127) !important;
   border-right: 2px solid rgb(127, 255, 127) !important;
 }
+
+/* === CREATE A SERVER PANEL === */
+.modal__024d4 {
+  background-color: var(--tokyo-midnight-bg-panels);
+  border: 1px solid rgb(88, 255, 113);
+}
+
+/* === CREATE YOUR SERVER - FOOTER === */
+.footer_c04f35 {
+  background-color: var(--tokyo-midnight-bg-sidebars);
+}
+
+/* === CREATE YOUR SERVER - TITLE === */
+.title_c04f35 {
+    background: var(--tokyo-midnight-custom4) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+/* === CREATE YOUR SERVER - SUBTITLE === */
+.subtitle_c04f35 {
+  color: rgb(173, 255, 169) !important;
+}
+
+/* === CREATE YOUR SERVER - OPTIONS === */
+.container_eb2cd2 {
+  border: 1px dashed rgb(179, 255, 134) !important;
+}
+
+/* === CREATE YOUR SERVER - OPTIONS TEXT === */
+.text_eb2cd2 {
+  color: rgb(194, 255, 177);
+}
+
+/* === CREATE SERVER - CLOSE BUTTON === */
+.modal__024d4 [class*="closeIcon"] {
+background-color: color-mix( in srgb, var(--tokyo-midnight-warning) 80%, transparent);
+  color: rgb(98, 2, 28) !important
+}
+
+.modal__024d4 .buttonChildrenWrapper_a22cb0 {
+  color: rgb(177, 255, 138);
+  border: 1px dashed rgb(175, 255, 148);
+}
+
+/* === CREATE YOUR SERVER - OPTIONS HEADER TEXT === */
+.optionHeader_c04f35 {
+  color: #77ff55 !important;
+}
+
+/* === CREATE YOUR SERVER - INVITE TEXT === */
+.footerTitle_c04f35 {
+  color: #77ff55;
+}
+
+/* === CREATE YOUR SERVER - FOOTER SEPARATOR === */
+.footer__49fc1 {
+  background-color: #131317f5 !important;
+}
+
+/* === CREATE YOUR SERVER - SERVER TYPE TEXT === */
+.title__78f69 {
+  background: var(--tokyo-midnight-custom4) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+.subtitle__78f69 {
+  color: rgb(126, 255, 126) !important;
+}
+
+.contentContainer__91dc3 {
+  background-color: var(--tokyo-midnight-bg-panels);
+}
+
+.header_c6bf1b {
+  background-color: var(--tokyo-midnight-bg-panels);
+}
+
+.sidebar_e29cd7 {
+  background-color: var(--tokyo-midnight-bg-panels);
+}
+
+.titleContainer_e29cd7 {
+  background-color: var(--tokyo-midnight-bg-panels);
+}
+
+.contentRegion__23e6b {
+  background-color: var(--tokyo-midnight-bg-panels);
+}
+
+.sidebarRegionScroller__23e6b {
+  background-color: #101014 !important;
+}
+
+.side_aa8da2 .item_aa8da2 {
+  color: rgb(130, 255, 130) !important;
+}
+
+.headerText_aa8da2 {
+  background: var(--tokyo-midnight-custom4) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+.contentRegionShownSidebar__23e6b  {
+  background-color: var(--tokyo-midnight-bg-sidebars);
+}
+
+.customScroller__23e6b {
+  background-color: var(--tokyo-midnight-bg-sidebars);
+}
+
+.container_d8f25b  {
+  background-color: #141419 !important;
+}
+
+.closeButton_c2b141 {
+  color: rgb(136, 255, 136) !important;
+}
+
+.keybind_c2b141 {
+  color: #60ff60;
+}
+
+.scroller__53543 {
+  background-color: var(--tokyo-midnight-bg-panels) !important;
+}
