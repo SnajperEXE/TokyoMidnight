@@ -58,9 +58,9 @@
     transform:
         translateX(
             calc(
-                var(--tokyo-member-collapsed)
-                -
                 var(--tokyo-member-width)
+                -
+                var(--tokyo-member-collapsed)
             )
         );
 
