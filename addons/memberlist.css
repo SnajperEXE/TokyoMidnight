@@ -44,7 +44,7 @@
 
 /* ---------- USERNAMES ---------- */
 
-[class*="name_"] {
+[class*="membersWrap_"] .username__703b9 {
     opacity: 0;
     transition: opacity 0.2s ease;
 }
