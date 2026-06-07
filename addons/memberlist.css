@@ -11,28 +11,19 @@
 [class*="membersWrap_"] {
 
     width:
-        var(--tokyo-member-width) !important;
+        var(--tokyo-member-collapsed) !important;
 
     min-width:
-        0 !important;
+        var(--tokyo-member-collapsed) !important;
 
     overflow:
         hidden;
 
-    transform:
-        translateX(
-            calc(
-                var(--tokyo-member-width)
-                -
-                var(--tokyo-member-collapsed)
-            )
-        );
-
     transition:
-        transform var(--tokyo-member-transition);
+        width var(--tokyo-member-transition);
 
     will-change:
-        transform;
+        width;
 }
 
 /* ---------- OPEN ---------- */
@@ -40,8 +31,11 @@
 [class*="membersWrap_"]:hover,
 [class*="membersWrap_"]:focus-within {
 
-    transform:
-        translateX(0);
+    width:
+        var(--tokyo-member-width) !important;
+
+    min-width:
+        var(--tokyo-member-width) !important;
 }
 
 /* ---------- MEMBER PANEL ---------- */
@@ -58,7 +52,29 @@
         blur(10px);
 
     transition:
+        transform var(--tokyo-member-transition),
         backdrop-filter .3s ease;
+
+    transform:
+        translateX(
+            calc(
+                var(--tokyo-member-collapsed)
+                -
+                var(--tokyo-member-width)
+            )
+        );
+
+    will-change:
+        transform;
+}
+
+/* ---------- PANEL OPEN ---------- */
+
+[class*="membersWrap_"]:hover [class*="members_"],
+[class*="membersWrap_"]:focus-within [class*="members_"] {
+
+    transform:
+        translateX(0);
 }
 
 /* ---------- MEMBER ROW ---------- */
@@ -84,25 +100,27 @@
 
 [class*="membersWrap_"] [class*="name_"] {
 
-    opacity: 0;
+    opacity:
+        0;
 
     filter:
         blur(3px);
+
+    transform:
+        translateX(12px);
 
     transition:
         opacity .28s ease,
         filter .35s ease,
         transform .35s ease;
-
-    transform:
-        translateX(12px);
 }
 
 /* ---------- ROLE HEADERS ---------- */
 
 [class*="membersWrap_"] [class*="membersGroup_"] {
 
-    opacity: 0;
+    opacity:
+        0;
 
     transform:
         translateX(12px);
@@ -117,7 +135,8 @@
 [class*="membersWrap_"]:hover [class*="name_"],
 [class*="membersWrap_"]:focus-within [class*="name_"] {
 
-    opacity: 1;
+    opacity:
+        1;
 
     filter:
         blur(0);
@@ -129,7 +148,8 @@
 [class*="membersWrap_"]:hover [class*="membersGroup_"],
 [class*="membersWrap_"]:focus-within [class*="membersGroup_"] {
 
-    opacity: 1;
+    opacity:
+        1;
 
     transform:
         translateX(0);
