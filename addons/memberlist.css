@@ -8,20 +8,11 @@
 
 [class*="membersWrap_"] {
 
-    width:
-        var(--tokyo-member-collapsed) !important;
-
-    min-width:
-        var(--tokyo-member-collapsed) !important;
-
-    overflow:
-        hidden;
-
-    transition:
-        width var(--tokyo-member-transition);
-
-    will-change:
-        width;
+    width: var(--tokyo-member-collapsed) !important;
+    min-width: var(--tokyo-member-collapsed) !important;
+    overflow: hidden;
+    transition: width var(--tokyo-member-transition);
+    will-change: width;
 }
 
 /* ---------- OPEN ---------- */
@@ -36,33 +27,24 @@
         var(--tokyo-member-width) !important;
 }
 
+
+/* ---------- OPEN ---------- */
+
+[class*="membersWrap_"]:hover,
+[class*="membersWrap_"]:focus-within {
+
+    width: var(--tokyo-member-width) !important;
+    min-width:var(--tokyo-member-width) !important;
+}
+
 /* ---------- MEMBER PANEL ---------- */
 
 [class*="members_"] {
 
-    width:
-        var(--tokyo-member-width) !important;
-
-    border-left:
-        1px solid var(--tokyo-midnight-border);
-
-    backdrop-filter:
-        blur(10px);
-
-    transition:
-        backdrop-filter .3s ease;
-
-    transform:
-        translateX(
-            calc(
-                var(--tokyo-member-width)
-                -
-                var(--tokyo-member-collapsed)
-            )
-        );
-
-    will-change:
-        transform;
+    width: var(--tokyo-member-width) !important;
+    border-left: 1px solid var(--tokyo-midnight-border);
+    backdrop-filter: blur(10px);
+    transition: backdrop-filter .3s ease;
 }
 
 /* ---------- PANEL OPEN ---------- */
@@ -78,10 +60,7 @@
 
 [class*="member_"] {
 
-    transition:
-        opacity .25s ease,
-        transform .35s ease,
-        filter .35s ease;
+    transition: opacity .25s ease, transform .35s ease,filter .35s ease;
 }
 
 /* ---------- COLLAPSED STATE ---------- */
