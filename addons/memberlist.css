@@ -4,24 +4,17 @@
 * @version 1.0.0
 * @description Compact member list with smooth hover expansion.
 
-/* ---------- WRAPPER ---------- */
+/* ---------- MEMBER LIST COLLAPSE ---------- */
 
 [class*="membersWrap_"] {
-
     width: 48px !important;
     min-width: 48px !important;
-
     overflow: hidden;
-
-    transition:
-        width .25s ease;
+    transition: width 0.25s ease;
 }
-
-/* ---------- EXPANDED ---------- */
 
 [class*="membersWrap_"]:hover,
 [class*="membersWrap_"]:focus-within {
-
     width: var(--custom-member-list-width) !important;
     min-width: var(--custom-member-list-width) !important;
 }
@@ -29,119 +22,37 @@
 /* ---------- MEMBER PANEL ---------- */
 
 [class*="members_"] {
-
     width: 100% !important;
-
-    backdrop-filter:
-        blur(10px);
-
-    transition:
-        backdrop-filter .25s ease;
 }
 
-/* ---------- MEMBER ROWS ---------- */
+/* ---------- FLEX FIXES ---------- */
 
 [class*="member_"],
 [class*="layout_"],
 [class*="memberInner_"] {
-
     min-width: 0 !important;
-}
-
-/* ---------- ROLE HEADERS ---------- */
-
-[class*="membersGroup_"] {
-
-    opacity: 0;
-
-    max-height: 0;
-
-    overflow: hidden;
-
-    transform:
-        translateX(8px);
-
-    transition:
-        opacity .2s ease,
-        transform .25s ease,
-        max-height .25s ease;
-}
-
-[class*="membersWrap_"]:hover [class*="membersGroup_"],
-[class*="membersWrap_"]:focus-within [class*="membersGroup_"] {
-
-    opacity: 1;
-
-    max-height: 40px;
-
-    transform:
-        translateX(0);
 }
 
 /* ---------- USERNAMES ---------- */
 
 [class*="name_"] {
-
     opacity: 0;
-
-    filter:
-        blur(2px);
-
-    transform:
-        translateX(8px);
-
-    transition:
-        opacity .2s ease,
-        filter .25s ease,
-        transform .25s ease;
+    transition: opacity 0.2s ease;
 }
 
 [class*="membersWrap_"]:hover [class*="name_"],
 [class*="membersWrap_"]:focus-within [class*="name_"] {
-
     opacity: 1;
-
-    filter:
-        blur(0);
-
-    transform:
-        translateX(0);
 }
 
-/* ---------- ACTIVITIES / CUSTOM STATUS ---------- */
+/* ---------- ROLE HEADERS ---------- */
 
-[class*="container__"]:has([class*="subText_"]) {
-
+[class*="membersGroup_"] {
     opacity: 0;
-
-    max-height: 0;
-
-    overflow: hidden;
-
-    transition:
-        opacity .2s ease,
-        max-height .25s ease;
+    transition: opacity 0.2s ease;
 }
 
-[class*="membersWrap_"]:hover [class*="container__"]:has([class*="subText_"]),
-[class*="membersWrap_"]:focus-within [class*="container__"]:has([class*="subText_"]) {
-
+[class*="membersWrap_"]:hover [class*="membersGroup_"],
+[class*="membersWrap_"]:focus-within [class*="membersGroup_"] {
     opacity: 1;
-
-    max-height: 50px;
-}
-
-/* ---------- SMOOTHER MEMBER ROWS ---------- */
-
-[class*="member_"] {
-
-    transition:
-        background-color .15s ease,
-        transform .15s ease;
-}
-
-[class*="member_"]:hover {
-
-    transform:
-        translateX(-2px);
 }
