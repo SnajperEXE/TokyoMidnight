@@ -2967,3 +2967,32 @@ background-color: color-mix( in srgb, var(--tokyo-midnight-warning) 80%, transpa
 .scroller__53543 {
   background-color: var(--tokyo-midnight-bg-panels) !important;
 }
+
+.scroller__6131a .defaultColor__4bd52.text-md\/medium_cf4812 {
+    color: rgb(160, 253, 169) !important;
+}
+
+.textButton__7a01b .text__7a01b {
+    background: linear-gradient(90deg, rgb(128, 255, 140) 0%, rgb(64, 224, 165) 50%, rgb(64, 224, 165) 50%, rgb(128, 255, 140) 100%);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: background-position 0.4s ease;
+}
+
+.textButton__7a01b:hover .text__7a01b {
+    background-position: 100% 0%;
+}
+
+/* == DELETE ACCOUNT BUTTON === */
+.scroller__6131a .critical-primary_a22cb0 {
+
+  background: linear-gradient(135deg, rgba(24, 11, 15, 0.96), rgba(23, 25, 31, 0.98)) padding-box, linear-gradient(135deg, #ffa2a2, #e44f5e, #ad1f37, #ff4854, #ffa2a2) !important;
+  background-size: 100% 100%, 300% 300% !important;
+  border: 1px solid transparent !important;
+  color: #c52847 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1px 0 rgba(255, 255, 255, 0.03), 0 0 12px rgba(139, 224, 255, 0.12), 0 0 24px rgba(173, 127, 255, 0.08), 0 10px 40px rgba(0, 0, 0, 0.42);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
