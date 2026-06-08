@@ -529,9 +529,9 @@
 
 /* === PROFLE SETTINGS - MENU === */
 .item_caf372.active_caf372 {
-background-color: #66fa7cd0;
-color: black;
-box-shadow: 0 0 8px rgba(68, 255, 68, 0.768);
+  background-color: #2e2e2e;
+  color: #a4fcaf;
+  box-shadow: 0 0 10px 5px rgb(4 48 8 / 37%);
 }
 
 /* === PROFILE SETTINGS = SUBMENU === */
@@ -3077,4 +3077,10 @@ background-color: rgb(128 255 140 / 0.0784313725490196);
 
 .markup__75297 ul li::marker {
     color: rgb(75, 233, 117);
+}
+
+/* === USER PANEL === */
+.container__37e49 {
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
 }
