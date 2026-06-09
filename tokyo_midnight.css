@@ -3214,3 +3214,45 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     -webkit-background-clip: text !important;
     background-clip: text;
 }
+
+/* INBOX SCROLLER */
+.scroller__95796 {
+    background-color: var(--tokyo-midnight-bg-panels) !important;
+    border-left: 1px solid var(--tokyo-midnight-border) !important;
+    border-right: 1px solid var(--tokyo-midnight-border) !important;
+    border-top: 1px solid var(--tokyo-midnight-border) !important;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.messageContainer__95796 {
+    background-color: var(--tokyo-midnight-bg-panels) !important;
+    border: 1px solid rgb(132, 252, 127) !important;
+}
+
+/* === INBOX - MESSAGE HEADER === */
+.channelHeader__35a7e {
+    background-color: #18181c !important;
+
+}
+
+/* === INBOX - MAIN HEADER === */
+.header_ab6641 {
+    background-color: var(--tokyo-midnight-bg-panels) !important;
+    border-left: 1px solid rgb(132, 252, 127) !important;
+    border-right: 1px solid rgb(132, 252, 127) !important;
+}
+
+/* == INBOX - INNER BG === */
+.container_fc561d {
+    background-color: transparent !important;
+}
+
+/* === INBOX FOOTER - HEADER TEXT === */
+.header_d404a3 {
+    color: rgb(78, 247, 69) !important;
+}
+
+    .protip_d404a3 {
+        color: rgb(56, 230, 105) !important;
+}
