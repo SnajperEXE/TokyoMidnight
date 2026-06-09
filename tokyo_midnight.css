@@ -2606,10 +2606,6 @@ background: #18191e;
   font-weight: 700;
 }
 
-.wrapper_f61d60:hover {
-  background: rgb(49 229 82 / 10%) !important;
-  color: rgb(34 229 71) !important;
-}
 /* Checkmark */
 .botTagVerified__82f07 path {
 fill: var(--tokyo-midnight-black);
