@@ -3362,3 +3362,98 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     -webkit-background-clip: text !important;
     background-clip: text !important;
 }
+
+/* === USER NAME IN USER PANEL - COLOR BASED ON STATUS === */
+
+/* Online */
+.container__37e49:has([mask*="status-online"])
+.hovered__0263c {
+    color: var(--tokyo-midnight-green) !important;
+}
+
+/* Idle */
+.container__37e49:has([mask*="status-idle"])
+.hovered__0263c {
+    color: var(--tokyo-midnight-orange) !important;
+}
+
+/* DND */
+.container__37e49:has([mask*="status-dnd"])
+.hovered__0263c {
+    color: var(--tokyo-midnight-red) !important;
+}
+
+/* Offline / Invisible */
+.container__37e49:has([mask*="status-offline"])
+.hovered__0263c {
+    color: var(--tokyo-midnight-gray) !important;
+    background: none !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.page_c791b2 {
+    background-color: var(--tokyo-midnight-bg-main) !important;
+}
+
+.pageBody__41ed7 {
+    background-color: var(--tokyo-midnight-bg-main) !important;
+}
+
+.channelRow_e4503a:not(.disabled_e4503a) {
+    background-color: var(--tokyo-midnight-bg-panels) !important;
+    border: 1px solid rgb(173, 255, 135) !important;
+}
+
+.channelRow_e4503a .buttonChildrenWrapper_a22cb0 {
+    background-color: rgb(85, 246, 126);
+    border: 2px solid rgb(1, 1, 52) !important;
+}
+.wrapper__72c38:not([data-read-only=true]):has(input:focus,textarea:focus) {
+    outline: 2px solid rgb(38, 220, 62);
+}
+
+.contentWrapper__08434 {
+    background-color: rgb(0, 0, 19);
+}
+
+.wrapper__14245 {
+    background-color: rgb(18, 18, 24);
+}
+
+.scroller_affa7e {
+    background-color: var(--tokyo-midnight-bg-sidebars);
+}
+
+.inspector_aeaaeb {
+    background-color: rgb(0, 0, 19);
+    border-top: 1px solid rgb(36, 90, 15);
+}
+
+.inspector_aeaaeb .text-md\/semibold_cf4812 {
+    color: #3de94f !important;
+}
+
+.titleSecondary_aeaaeb strong {
+    color: rgb(49, 204, 21);
+    text-shadow: 0 0 7px rgba(78, 236, 54, 0.759);
+}
+
+.categoryIcon_b9ee0c {
+    color: rgb(100, 222, 89) !important;
+}
+
+.topGuildEmojiBadge_aeaaeb {
+    background: linear-gradient(90deg, #51bf7b, #59db3f 102.45%);
+}
+
+.topGuildEmojiBadge_aeaaeb .text-sm\/semibold_cf4812 {
+    color: rgb(4, 1, 16) !important;
+}
+
+.topGuildEmojiBadge_aeaaeb svg {
+    color: rgb(4, 1, 16) !important;
+}
+
+.headerIcon__14245+.headerLabel__14245 {
+    color: rgba(54, 232, 54, 0.934);
+}
