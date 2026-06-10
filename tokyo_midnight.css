@@ -2111,8 +2111,7 @@ filter: drop-shadow(0 0 10px rgba(219, 10, 42, 0.856));
 
 /* === NORMAL PROFILE CARDS === */
 
-.user-profile-popout .inner_c0bea0:not(.custom-user-profile-theme) {
-
+.outer_c0bea0.user-profile-popout:not(.custom-user-profile-theme) .inner_c0bea0 {
     background: var(--tokyo-midnight-bg-panels) !important;
     border: 1px solid var(--tokyo-midnight-border);
     box-shadow: 0 0 18px rgba(129,252,166,.08);
@@ -2122,8 +2121,7 @@ filter: drop-shadow(0 0 10px rgba(219, 10, 42, 0.856));
 /* === OPTIONAL: KEEP NITRO CARDS CLEAN === */
 
 .custom-user-profile-theme {
-
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(2px);
 }
 
 /* == DISABLES THE UI OVERLAY FROM CLICKING ON A SPECIFIC ELEMENTS (POP UPS) === */
