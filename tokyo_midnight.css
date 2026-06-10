@@ -2,9 +2,9 @@
 
   /* === CORE ATMOSPHERE === */
 
-  --tokyo-midnight-bg-main: #0b0b14;
+  --tokyo-midnight-bg-main: #0e0e16;
   --tokyo-midnight-bg-sidebars: #0f0f12f7;
-  --tokyo-midnight-bg-panels: #18181df6;
+  --tokyo-midnight-bg-panels: #0e0e10;
 
   /* === COLORS === */
   --tokyo-midnight-black: #0c0c11;
@@ -3293,4 +3293,25 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
 /* === SERVER BOOSTS - NOTICES POP UP === */
 .container__1dc40 {
     background-color: rgb(30, 29, 34);
+}
+
+
+/* === DID YOU KNOW? CONTAINER === */
+.container_a2f514 {
+    background-color: rgb(1, 0, 15) !important;
+}
+
+.tipTitle_a2f514 {
+    color: rgb(125, 239, 138) !important;    
+}
+
+.tip_a2f514 {
+    color: rgb(56, 248, 72) !important;
+}
+
+.key__61c93 {
+    color: rgb(28, 213, 56);
+    border: 1px solid rgb(62, 230, 70);
+    width: 70px !important;
+    padding: 4px 0px 0 !important;
 }
