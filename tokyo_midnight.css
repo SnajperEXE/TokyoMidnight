@@ -862,7 +862,7 @@ font-weight: 700;
 background: var(--tokyo-midnight-green) !important;
 color: var(--tokyo-midnight-black) !important
 font-weight: 700;
-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%) !important
 
 }
 
@@ -870,7 +870,7 @@ clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%,
 .divider__5126c {
 background: var(--tokyo-midnight-green);
 height: 2px;
-border-left: 8px; /* this? */
+border-left: 8px;
 }
 
 /* MESSAGE HIGHLIGHT BG */
@@ -914,7 +914,7 @@ border: currentColor;
     transform: rotate(18deg);
     opacity: .75;
     pointer-events: none;
-    animation: tokyoRubyPrestigeShine 8s ease-in-out infinite !important; /* ANIMATION: Your moderate smooth glide */
+    animation: tokyoRubyPrestigeShine 8s ease-in-out infinite !important;
 }
 
 /* HOVER */
