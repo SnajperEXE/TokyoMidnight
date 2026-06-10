@@ -65,7 +65,7 @@
   --tokyo-midnight-warning: #ff4d53;
   --tokyo-midnight-warning-soft: hsla(0, 86%, 67%, 0.12);
   --tokyo-midnight-warning-bg: #1c0000;
-  --tokyo-mifnight-warning-text: #ffacbf;
+  --tokyo-midnight-warning-text: #ffacbf; /* fixed typo */
 }
 
 /* === MEMBER PANEL SEPARATOR REMOVAL === */
