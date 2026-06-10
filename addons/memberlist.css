@@ -10,13 +10,12 @@
     width: 48px !important;
     min-width: 48px !important;
     overflow: hidden;
-
-    border-left: 1px solid rgba(87, 255, 143, 0.5);
+    will-change: width;
 
     transition:
-        width 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
+        width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.35s ease,
+        box-shadow 0.35s ease; 
 }
 
 [class*="membersWrap_"]:hover,
