@@ -2769,7 +2769,7 @@ text-shadow: 0 0 10px rgba(51, 215, 95, 0.878);
 }
 
 /* === NEW BADGE === */
-.baseShapeRound__2b1f5 { /* Appears next to the suggested channel name and next to "Channels & Roles" */
+[class*="baseShapeRound"] { /* Appears next to the suggested channel name and next to "Channels & Roles" */
   background: linear-gradient(90deg, #84f86f 0%, #73ff9a 100%) !important; /* Changes the gradient to mint-green color to match the theme */
   color: rgb(0, 6, 28) !important; /* Changed to midnight-black color, for better readability */
 }
