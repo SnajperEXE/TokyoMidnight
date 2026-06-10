@@ -3315,3 +3315,50 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     width: 70px !important;
     padding: 4px 0px 0 !important;
 }
+
+/* === EMOJI SECTION POP UP - BOTTOM === */
+.guildSection_d5cd2d {
+    background: linear-gradient(90deg, #08061489 0%, #13131c9e 100%) !important;
+    border-top: 1px solid rgba(35, 33, 48, 0.721) !important;
+    border-left: 1px solid rgb(137, 254, 152) !important;
+    border-right: 1px solid rgb(137, 254, 152) !important;
+    border-bottom: 1px solid rgb(137, 254, 152) !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+/* === EMOJI SECTION POP UP - TOP === */
+.emojiSection_d5cd2d {
+    background: linear-gradient(90deg, #0401166e 0%, #13131c9e 100%) !important;
+    border-top: 1px solid rgb(137, 254, 152) !important;
+    border-left: 1px solid rgb(137, 254, 152) !important;
+    border-right: 1px solid rgb(137, 254, 152) !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+/* === EMOJI SECTION POP UP - CONTAINER BEHIND === */
+.popoutContainer__0f481 {
+    background-color: transparent !important;
+}
+
+.emojiSection_d5cd2d .overflow_b0dfc2 { /* Changes the color of the emoji name only inside this pop up */
+    color: rgb(41, 218, 53) !important;
+    font-weight: 800;
+}
+
+.emojiSection_d5cd2d .text-sm\/normal_cf4812 {
+    color: rgb(130, 251, 134) !important;
+}
+
+.guildSection_d5cd2d .text-sm\/medium_cf4812 {
+    color: rgb(58, 224, 91) !important;
+}
+
+/* === EMOJI POP UP - INVITE ONLY TEXT === */   
+.guildSection_d5cd2d .text-xs\/normal_cf4812 {
+    background: var(--tokyo-midnight-custom2) !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+}
