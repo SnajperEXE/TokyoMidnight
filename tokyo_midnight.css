@@ -3252,3 +3252,45 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     .protip_d404a3 {
         color: rgb(56, 230, 105) !important;
 }
+
+/* === REPLY BAR - REPLYING TO.. === */
+.bar__84522 {
+    background-color: rgb(20, 20, 24) !important;
+    border-top: 2px solid rgb(166, 255, 158);
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important
+}
+
+/* === SERVER BOOST - LEVEL CARDS === */
+.parentContainer__5573a:has(.focusTarget__54e4b[aria-label^="Level"])
+.container__5573a.card__823e1 {
+    background: linear-gradient(-90deg, rgba(27, 164, 50, 0.381), rgba(2, 105, 9, 0.94)) !important;
+    border: 1px solid rgba(102, 255, 94, 0.818) !important;
+    border-radius: 16px;
+}
+
+.powerupsContainer__89463 {
+    background-color: rgb(14, 15, 20);
+}
+
+.parentContainer__5573a:has(.focusTarget__54e4b[aria-label^="Level"])
+.container__5573a.card__823e1
+.text-sm\/medium_cf4812 {
+    color: #030014 !important;
+    font-weight: 600 !important
+}
+
+/* === SERVER BOOSTS - SIDEBAR === */
+.sidebarContainer__89463 {
+    background-color: #0c0d13 !important;
+}
+
+.container__5573a {
+    background: rgb(24, 24, 32) !important;
+    border: 1px solid rgb(129, 255, 138);
+}
+
+/* === SERVER BOOSTS - NOTICES POP UP === */
+.container__1dc40 {
+    background-color: rgb(30, 29, 34);
+}
