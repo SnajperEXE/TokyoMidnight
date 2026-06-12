@@ -11,7 +11,8 @@
     min-width: 48px !important;
     overflow: hidden;
     will-change: width;
-
+    border-left: 1px solid rgba(87, 255, 143, 0.08);
+    
     transition:
         width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
         border-color 0.35s ease,
