@@ -3455,3 +3455,43 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
 .headerIcon__14245+.headerLabel__14245 {
     color: rgba(54, 232, 54, 0.934);
 }
+
+.messageContent_c19a55 >.timestamp_c19a55 { /* Changed (edited) to to actual time (DD:MM:YYYY) */
+  /* :not(>.message-translate-indicator) */
+  >span >time >.edited_c19a55 {font-size: 0;}
+  >.hiddenVisually_b18fe2 {
+    clip: unset;
+    clip-path: unset;
+    width: max-content;
+    height: unset;
+    margin-top: 1px;
+    position: unset;
+    background-image: var(--tokyo-midnight-custom4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* &::before {content: '✎ edited on (';} */
+    /* &::after {content: ')';} */
+    &::before {content: '✎ ';}
+  }
+}
+
+/* === EMOJI POP OUT === */
+.rolePopout__75297 {
+  background-color: hsl(240, 33%, 4%);
+  border: 1px solid rgba(82, 227, 87, 0.56);
+}
+
+/* === ELEMENT HIGHLIGHT === */
+.focus-rings-ring {
+    box-shadow: 0 0 0 4px #6cfb67 !important;
+}
+
+/* === NAME MENTION - HOVER === */
+.wrapper_f61d60:hover {
+  color: rgba(5, 2, 32, 0.864) !important;
+  background-color: rgb(111, 231, 109);
+  box-shadow: 0 0 10px 1px rgba(60, 236, 36, 0.782) !important;
+  font-weight: 600 !important;
+}
