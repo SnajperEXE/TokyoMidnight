@@ -3473,3 +3473,255 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
   box-shadow: 0 0 10px 1px rgba(60, 236, 36, 0.782) !important;
   font-weight: 600 !important;
 }
+
+.autocompleteAttached__6b0e0 {
+    background-color: rgb(3, 1, 18);
+    border: 1px dashed rgba(157, 243, 157, 0.897);
+}
+
+[class*="autocompleteAttached"] .heading-deprecated-12\/semibold_cf4812 {
+    width: fit-content;
+    background: linear-gradient(90deg, #8ef8a8 0%, #31e312 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 10px rgba(118, 151, 122, 0.919);
+}
+
+    /* DIRECT MESSAGES - ICONS === */
+.iconWrapper__9293f[aria-label="Start Video Call"] .icon__9293f {
+    color: var(--tokyo-midnight-icons) !important;
+}
+
+.iconWrapper__9293f[aria-label="Start Voice Call"] .icon__9293f {
+    color: var(--tokyo-midnight-icons) !important;
+}
+
+.iconWrapper__9293f[aria-label="Add to DM"] .icon__9293f {
+    color: var(--tokyo-midnight-icons) !important;
+}
+
+.iconWrapper__9293f[aria-label="Hide User Profile"] .icon__9293f {
+    color: var(--tokyo-midnight-icons) !important;
+}
+
+.iconWrapper__9293f[aria-label="Show User Profile"] .icon__9293f {
+    color: var(--tokyo-midnight-icons) !important;
+}
+
+/* === X BUTTON === */
+.icon-only_a22cb0 {
+    background-color: #80002037;
+}
+
+.icon-only_a22cb0 path {
+    color: #991A33;
+}
+.icon-only_a22cb0:hover {
+    background-color: #991A3337;
+}
+
+.icon-only_a22cb0:hover .icon_a22cb0 path {
+    fill: #d33b5a !important;
+}
+.warning__35859 {
+    position: relative;
+    background: rgba(82, 8, 19, 0.725) !important;
+    border-radius: 8px;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.warning__35859::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    pointer-events: none;
+
+    background: 
+        /* Top border line */
+        repeating-linear-gradient(90deg, rgb(172, 26, 26) 0 8px, transparent 8px 16px) top / 100% 2px no-repeat,
+        /* Right border line */
+        repeating-linear-gradient(180deg, rgb(172, 26, 26) 0 8px, transparent 8px 16px) right / 2px 100% no-repeat,
+        /* Bottom border line */
+        repeating-linear-gradient(270deg, rgb(172, 26, 26) 0 8px, transparent 8px 16px) bottom / 100% 2px no-repeat,
+        /* Left border line */
+        repeating-linear-gradient(360deg, rgb(172, 26, 26) 0 8px, transparent 8px 16px) left / 2px 100% no-repeat;
+
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    animation: warning-marching-ants 3s linear infinite;
+}
+
+@keyframes warning-marching-ants {
+    0% {
+        background-position: 
+            0% top,     /* Top edge moves right */
+            right 0%,   /* Right edge moves down */
+            100% bottom,/* Bottom edge moves left */
+            left 100%;  /* Left edge moves up */
+    }
+    100% { background-position: 
+            32px top,     
+            right 32px,   
+            calc(100% - 32px) bottom, 
+            left calc(100% - 32px);
+    }
+}
+
+.warning__35859 .icon__35859 {
+    color: #cc3b3b;
+}
+
+.warning__35859 .text-sm\/medium_cf4812 {
+    color: rgb(235, 49, 61) !important;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(128, 15, 15, 0.508);
+}
+
+/* === SEARCH RESULTS - SCROLLER === */
+.scroller_a98f3b {
+    background-color: rgb(3, 0, 22);
+}
+
+/* == SEARCH RESULTS - MESSAGES === */
+.message__80bf8 {
+    background-color: var(--tokyo-midnight-bg-panels);
+    border: 1px solid var(--tokyo-midnight-border) !important;
+}
+
+/* == CODE BLOCK === */
+.markup__75297 code {
+    background: color-mix( in oklab, hsla(120, 100%, 50%, 0.129) 100%, hsl(var(--custom-theme-base-color-hsl, 0 0% 0%) / 0.0784313725490196) var(--custom-theme-base-color-amount, 0%));
+    border: 1px solid hsla(122, 65%, 35%, 0.573) !important;
+    color: hsla(125, 100%, 86%, 0.99);
+}
+
+.paginationDock_a98f3b {
+    background: var(--tokyo-midnight-bg-panels);
+    border-top: 1px solid rgb(4, 74, 9);
+}
+
+.activeButton_c15210 {
+    background-color: rgba(59, 238, 86, 0.855);
+    color: rgb(0, 11, 51) !important;
+}
+
+.activeButton_c15210:hover {
+    background-color: rgb(62, 232, 62);
+    color: rgb(3, 10, 37) !important;
+}
+
+.iconCaret_c15210:first-child {
+    color: rgb(108, 253, 89);
+}
+
+.iconCaret_c15210:last-child {
+    color: rgb(108, 253, 89);
+}
+
+.endButton_c15210:first-child {
+    color: rgb(83, 241, 81);
+}
+
+.endButton_c15210:last-child {
+    color: rgb(83, 241, 81);
+}
+
+.roundButton_c15210:not(.activeButton_c15210) {
+    color: rgb(70, 243, 70) !important;
+}
+
+.roundButton_c15210:not(.activeButton_c15210):hover {
+    color: rgb(70, 243, 70) !important;
+    background-color: rgba(102, 244, 92, 0.204);
+}
+
+.endButton_c15210:last-child:not(:first-child):hover {
+    color: rgb(64, 182, 62);
+    background-color: rgba(129, 253, 118, 0.126);
+}
+
+.endButton_c15210:first-child:not(:last-child):hover {
+    color: rgb(35, 200, 33);
+    background-color: rgba(89, 231, 76, 0.208);
+}
+
+.searchHeader_ae7890 {
+    background-color: var(--tokyo-midnight-bg-panels);
+    color: rgb(35, 200, 33);
+    border-bottom: 1px solid rgb(4, 74, 9) !important
+}
+
+/* Results count */
+.searchHeader_ae7890 .totalResults_ae7890 {
+    color: rgb(35, 200, 33);
+}
+
+/* Filters & Sort buttons */
+.searchHeader_ae7890 .button_a22cb0.secondary_a22cb0 {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: inherit;
+}
+
+.searchHeader_ae7890 .button_a22cb0.secondary_a22cb0:hover {
+    color: rgb(35, 200, 33);
+    background-color: rgba(129, 253, 118, 0.126);
+}
+
+.searchHeader_ae7890 .text-md\/medium_cf4812 {
+    color: rgb(35, 200, 33) !important;
+}
+
+.channelTextArea_f75fb0 {
+    background-color: transparent;
+}
+
+/* ===================== */
+/*     BETA FEATURES
+/* ===================== */
+
+/* === SUMMARIES - TOPIC PILL === */
+.topicsPill__0f481 {
+    background-color: var(--tokyo-midnight-bg-panels);
+    border: 1px solid rgba(96, 235, 122, 0.548);
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+
+/* === SUMMARIES - TOPIC TITLE === */
+.topicsPillTextTitle__0f481 {
+    color: rgb(88, 238, 86);
+}
+
+/* === SUMMARIES - ARROW === */
+.topicsPillDropdownCaret__0f481 {
+    color: rgb(88, 238, 86) !important;
+}
+
+/* = NEW MEMBER FLOATING CARD === */
+.floatingBars__74017 .newMemberActionBar__74017 {
+    background-color: transparent !important;
+}
+
+.banner__183e8 {
+    background-color: var(--tokyo-midnight-bg-panels);
+    border-top: 1px solid var(--tokyo-midnight-border) !important;
+    border-left: 1px solid var(--tokyo-midnight-border);
+    border-right: 1px solid var(--tokyo-midnight-border);
+}
+
+.newTopicsBarContainer__0f481 {
+    background: linear-gradient( 180deg, rgba(3, 160, 61, 0.503), rgba(1, 107, 40, 0.437) ) !important;
+    border: 2px solid #07e2573c !important;
+    backdrop-filter: blur(1px) !important;
+    color: rgb(3, 1, 29);
+    font-weight: 700;
+}
