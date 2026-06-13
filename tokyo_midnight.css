@@ -2596,14 +2596,6 @@ background: #18191e;
 .progressContainer__0d0f9 {
   transform: none !important;
 }
-
-/*  USER MENTION */
-.wrapper_f61d60 {
-  background: rgba(137, 255, 151, 0.382);
-  color: var(--tokyo-midnight-black);
-  font-weight: 700;
-}
-
 /* Checkmark */
 .botTagVerified__82f07 path {
 fill: var(--tokyo-midnight-black);
@@ -3041,14 +3033,6 @@ background-color: rgb(128 255 140 / 0.0784313725490196);
      transition: background 0.6s ease, color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-.channelMention.wrapper_f61d60:hover {
-    background: linear-gradient(65deg, #48e545 0%, #18be368f 50%, #18be3676 100%) !important;
-    color: rgb(0, 0, 0) !important;
-    filter: brightness(1.1);
-    transform: translateY(-1px);
-    box-shadow: 0 0 8px rgba(72, 229, 69, 0.35);
-}
-
 .channelMention .name_b75563 {
     color: rgb(8, 4, 24) !important;
 }
@@ -3077,12 +3061,6 @@ background-color: rgb(128 255 140 / 0.0784313725490196);
 .container__37e49 {
     border-top-right-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
-}
-
-.wrapper_f61d60 {
-    background-color: rgb(65, 249, 99);
-    color: rgba(3, 0, 39, 0.864);
-    font-weight: 600;
 }
 
 /* === ACTIVITY PANEL - ADJUSTMENTS === */
