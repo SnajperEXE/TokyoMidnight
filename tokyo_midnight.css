@@ -3466,14 +3466,6 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     box-shadow: 0 0 0 4px #6cfb67 !important;
 }
 
-/* === NAME MENTION - HOVER === */
-.wrapper_f61d60:hover {
-  color: rgba(5, 2, 32, 0.864) !important;
-  background-color: rgb(111, 231, 109);
-  box-shadow: 0 0 10px 1px rgba(60, 236, 36, 0.782) !important;
-  font-weight: 600 !important;
-}
-
 .autocompleteAttached__6b0e0 {
     background-color: rgb(3, 1, 18);
     border: 1px dashed rgba(157, 243, 157, 0.897);
