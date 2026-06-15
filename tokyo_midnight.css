@@ -712,7 +712,7 @@ border: 2px dotted var(--tokyo-midnight-border) !important;
 }
 
 /* === SLOWMODE GRADIENT THINGY === */
-.chatGradientBase__36d07 {
+.chatGradientBase__36d07:not(.inTextChannel_b88801)not(.base_b88801) {
 
     background: radial-gradient( rgba(7,226,87,.28) 0%, rgba(8, 224, 58, 0.208) 38%, transparent 75% ) !important;
     filter: blur(20px);
@@ -722,21 +722,11 @@ border: 2px dotted var(--tokyo-midnight-border) !important;
 
 .tooltip__4e35b {
 
-    background:
-        rgba(8,10,14,.82) !important;
-
-    border:
-        2px solid var(--tokyo-midnight-border-strong);
-
-    border-radius:
-        12px;
-
-    backdrop-filter:
-        blur(14px);
-
-    box-shadow:
-        0 0 14px rgba(143,255,209,.06),
-        inset 0 0 10px rgba(143,255,209,.025);
+    background: rgba(8,10,14,.82) !important;
+    border: 2px solid var(--tokyo-midnight-border-strong);
+    border-radius: 12px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 0 14px rgba(143,255,209,.06), inset 0 0 10px rgba(143,255,209,.025);
 }
 
 /* === TOOLTIP TEXT === */
