@@ -760,8 +760,6 @@ border: 2px solid var(--tokyo-midnight-border);
 /* === GUILD - NAME === */
 [class*=guildName] {
     color: var(--tokyo-midnight-text-header) !important;
-    text-decoration-color: var(--tokyo-midnight-text-header) !important;
-    text-decoration: underline !important;
 }
 
 /* === GUILD - DESCRIPTION === */
