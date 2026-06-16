@@ -3730,3 +3730,82 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     color: rgb(3, 3, 22);
     border-radius: 5px;
 }
+
+.content__99f8c {
+    background: #0c0b10 !important;
+    border: 1px solid rgb(7, 35, 7);
+}
+
+.container__9a337 {
+    background-color: rgb(1, 2, 12) !important;
+    border: 2px solid rgba(109, 234, 149, 0.295);
+}
+
+.container__9a337:hover {
+    background-color: #0b0b0f !important;
+    border: 2px solid rgba(102, 232, 143, 0.441);
+}
+
+.pill_a2c9e8 {
+    background-color: rgba(82, 242, 84, 0.186) !important;
+    border-radius: 10px;
+    border: 1px solid rgba(86, 222, 100, 0.786);
+    color: rgb(3, 2, 26);
+    font-weight: 700 !important;
+}
+
+.tagsButton_f369db {
+    background-color: rgba(82, 242, 127, 0.186) !important;
+    border-radius: 15px;
+    border: 1px solid rgba(86, 222, 122, 0.786);
+    font-weight: 700 !important;
+}
+
+.tagsButton_f369db .tagsButtonInner_f369db {
+    color: rgb(3, 2, 26);
+    font-weight: 700 !important;
+}
+
+.sortDropdown_f369db {
+    background-color: rgba(82, 242, 127, 0.186) !important;
+    border-radius: 15px;
+    border: 1px solid rgba(86, 222, 122, 0.786);
+    font-weight: 700 !important;
+}
+
+.sortDropdownTextHighContrastForcedColor_f369db {
+    color: rgb(3, 2, 26);
+    font-weight: 700 !important;
+}
+
+.sortDropdown_f369db svg {
+    color: rgb(4, 3, 28);
+}
+
+.divider_f369db {
+background-color: rgba(97, 240, 81, 0.37);
+box-shadow: 0 0 5px rgb(97, 248, 95) !important;
+}
+
+.header__9a337 .heading-md\/extrabold_cf4812 {
+    color: rgb(117, 247, 139) !important;
+    text-shadow: 0 0 6px rgb(122, 238, 113);
+}
+
+.messageCountIcon_faa96b {
+    color: rgb(86, 204, 111) !important;
+}
+
+.hasRead_faa96b .messageCountText_faa96b {
+    color: rgb(42, 234, 65) !important;
+    text-shadow: 0 0 5px rgb(70, 226, 70);
+}
+
+.username__703b9 {
+    color: currentColor;
+    text-shadow: none !important;
+}
+
+.newMessageCount_faa96b {
+    color: rgb(131, 242, 159) !important;
+}
