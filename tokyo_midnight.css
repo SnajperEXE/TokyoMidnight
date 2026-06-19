@@ -3809,3 +3809,94 @@ box-shadow: 0 0 5px rgb(97, 248, 95) !important;
 .newMessageCount_faa96b {
     color: rgb(131, 242, 159) !important;
 }
+
+.lookFilled__201d5.colorPrimary__201d5:disabled {
+    background-color: #036f0c;
+    color: var(--tokyo-midnight-black);
+    font-weight: 600;
+}
+
+.lookFilled__201d5.colorPrimary__201d5:disabled:hover {
+    background-color: #048f11;
+}
+
+
+/* 1. Normal */
+* {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/normal.cur"), default !important;
+}
+
+/* 2. Text */
+input,
+textarea,
+[contenteditable="true"],
+.slateTextArea_ec4baf
+.innerDisabled__74017 {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/text.cur"), text !important;
+}
+
+[data-slate-editor="true"][contenteditable="false"],
+[data-slate-editor="true"][contenteditable="false"] *,
+.channelTextAreaDisabled__74017,
+.channelTextAreaDisabled__74017 * {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/unavailable.cur"), not-allowed !important;
+}
+
+.slateTextArea_ec4baf,
+.slateTextArea_ec4baf *,
+[data-slate-placeholder="true"] {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/text.cur"), text !important;
+}
+
+/* Message input */
+[contenteditable="true"],
+[contenteditable="true"] *,
+[data-slate-placeholder="true"] {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/text.cur"), text !important;
+}
+
+/* Search bars (Draft.js) */
+.DraftEditor-root,
+.DraftEditor-root *,
+.DraftEditor-editorContainer,
+.DraftEditor-editorContainer * {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/text.cur"), text !important;
+}
+
+/* 3. Links */
+a.anchor_edefb8,
+a.anchor_edefb8 * {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/link.cur"), pointer !important;
+}
+
+a.anchor_edefb8:active,
+a.anchor_edefb8:active * {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/unavailable.cur"), grabbing !important;
+}
+
+/* 4. Disabled / unavailable */
+.button__201d5:disabled,
+.button__201d5:disabled * {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/unavailable.cur"), not-allowed !important;
+}
+
+.is-dragging-disabled,
+.is-dragging-disabled * {
+    cursor: url("https://github.com/SnajperEXE/TokyoMidnight/raw/refs/heads/main/assets/unavailable.cur"), not-allowed !important;
+}
+
+[class*="guildInviteContainer"] {
+    background-color: rgb(10, 13, 19);
+    border: 1px solid rgb(126, 236, 128);
+    box-shadow: 0 0 10px 5px rgba(26, 255, 0, 0.118);
+}
+
+[class*="footerContent"] {
+    background-color:rgb(15, 16, 24);
+    border-top: 1px solid rgba(51, 236, 103, 0.119);
+}
+
+.gradient__083ae {
+    background: linear-gradient(#8aee8513 0%, rgba(165, 247, 161, 0.114) 50%, rgba(120, 239, 177, 0.114) 100%);
+
+}
