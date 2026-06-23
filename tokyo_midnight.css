@@ -2747,7 +2747,7 @@ text-shadow: 0 0 10px rgba(51, 215, 95, 0.878);
 }
 
 /* === NEW BADGE === */
-[class*="baseShapeRound"] { /* Appears next to the suggested channel name and next to "Channels & Roles" */
+[class*="baseShapeRound"]:not(.stepStatus_a68543) { { /* Appears next to the suggested channel name and next to "Channels & Roles" */
   background: linear-gradient(90deg, #84f86f 0%, #73ff9a 100%) !important; /* Changes the gradient to mint-green color to match the theme */
   color: rgb(0, 6, 28) !important; /* Changed to midnight-black color, for better readability */
 }
@@ -3994,4 +3994,61 @@ a.anchor_edefb8:active * {
 
 .boostContainer__823e1.boostContainerActive__823e1 {
     background-color: rgb(66, 224, 66);
+}
+
+.section__1f6ca {
+    background: #1e1f26;
+    border: 1px solid rgb(50, 47, 79);
+    border-radius: 8px;
+}
+
+.row__0a95c:hover {
+    background-color: #262832;
+    border: 1px solid #353556;
+    border-radius: 15px;
+}
+
+.media_a22bfd {
+    border-radius: 20px !important;
+    box-shadow: 0 0 10px 10px rgba(51, 214, 54, 0.163);
+}
+
+.root__5c1cf {
+    background-color: rgba(0, 2, 12, 0.923);
+    border: 1px solid rgba(26, 26, 45, 0.864);
+    border-radius: 15px;
+}
+
+.root__5c1cf .text-md\/semibold_cf4812 {
+    color: rgb(150, 255, 153);
+}
+
+.root__5c1cf path {
+    fill: rgb(104, 232, 109);
+}
+
+[class*="selectDropdown"] {
+    background-color: rgb(6, 7, 19);
+    border: 1px solid rgb(118, 240, 120) !important;
+}
+
+.option__56a50 {
+    color: rgb(140, 239, 145) !important;
+}
+
+.listBox__2e223:not(:focus-within) .listBoxItem__2e223[data-focus-visible=true] {
+    background-color: rgba(25, 131, 35, 0.233);
+}
+
+.listBoxItem__2e223:hover:not([aria-disabled]) {
+    background-color: rgba(3, 79, 13, 0.796) !important;
+}
+
+.selectField__0edde:not(.isInert__0edde).isFocused__0edde, .selectField__0edde:not(.isInert__0edde):focus-within {
+    outline: 1px solid rgb(56, 227, 37) !important;
+}
+
+.popover_d6f39b {
+    background: linear-gradient(90deg, #000117 0%, #030016 100%);
+    border: 1px solid rgba(158, 248, 170, 0.425) !important
 }
