@@ -636,12 +636,12 @@ background-color: red !important;
     background: var(--tokyo-midnight-warning-bg);
     border: 2px dotted var(--tokyo-midnight-warning);
     box-shadow: 0 0 12px var(--tokyo-midnight-warning-soft), inset 0 0 14px rgba(255, 184, 77, 0.04);
-    color: var(--tokyo-mifnight-warning-text);
+    color: var(--tokyo-midnight-warning-text);
 }
 
 /* === VENCORD SETTINGS - WARNING TEXT */
     .vc-card-warning .vc-text-defaultColor {
-    color: var(--tokyo-mifnight-warning-text) !important;
+    color: var(--tokyo-midnight-warning-text) !important;
 }
 
 /* === VENCORD SETTINGS - THEME NAME === */
@@ -848,9 +848,9 @@ font-weight: 700;
 /* === MESSAGE DATE === */
 .isUnread__908e2 .content__908e2 {
 background: var(--tokyo-midnight-green) !important;
-color: var(--tokyo-midnight-black) !important
+color: var(--tokyo-midnight-black) !important;
 font-weight: 700;
-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%) !important
+clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%) !important;
 
 }
 
@@ -2348,7 +2348,7 @@ background-color: var(--tokyo-midnight-icons);
 color: #83f9ba !important; /* Changes the text of the description inside Embed Messages */
 }
 
-* === "Leaving DIscord" Container === */
+/* === "Leaving DIscord" Container === */
 .container__8a031 {
 background: var(--tokyo-midnight-bg-panels);
 }
@@ -2653,7 +2653,7 @@ fill: var(--tokyo-midnight-black);
 
 /* USER PANEL - BLEEDING TEXT FIX */
 .container__37e49 {
-background: oklab(0.18 0 -0.01) !important
+background: oklab(0.18 0 -0.01) !important;
 }
 
 /* === DIRECT MESSAGES - FOOTER */
@@ -2736,7 +2736,7 @@ text-shadow: 0 0 10px rgba(51, 215, 95, 0.878);
 }
 
 /* === NEW BADGE === */
-[class*="baseShapeRound"]:not(.stepStatus_a68543) { { /* Appears next to the suggested channel name and next to "Channels & Roles" */
+[class*="baseShapeRound"]:not(.stepStatus_a68543) { /* Appears next to the suggested channel name and next to "Channels & Roles" */
   background: linear-gradient(90deg, #84f86f 0%, #73ff9a 100%) !important; /* Changes the gradient to mint-green color to match the theme */
   color: rgb(0, 6, 28) !important; /* Changed to midnight-black color, for better readability */
 }
@@ -3691,7 +3691,7 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     background: linear-gradient( 180deg, rgba(3, 160, 61, 0.503), rgba(1, 107, 40, 0.437) ) !important;
     border: 2px solid #07e2573c !important;
     backdrop-filter: blur(1px) !important;
-    color: rgb(3, 1, 29) !important
+    color: rgb(3, 1, 29) !important;
     font-weight: 700 !important;
 }
 
