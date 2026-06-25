@@ -148,7 +148,7 @@
     padding-top: 0 !important;
     background: var(--tokyo-midnight-border);
     padding-left: 1px;
-    padding-right: 1px
+    padding-right: 1px;
 }
 
 /* Reply Label */
@@ -170,19 +170,10 @@
 
     0%, 100% {
 
-        transform:
-            translateY(-50%)
-            scale(0.98);
-
-        opacity:
-            0.82;
-
-        box-shadow:
-            0 0 4px currentColor,
-            0 0 8px rgba(255, 44, 44, 0);
-
-        filter:
-            brightness(0.96);
+        transform: translateY(-50%) scale(0.98);
+        opacity: 0.82;
+        box-shadow: 0 0 4px currentColor, 0 0 8px rgba(255, 44, 44, 0);
+        filter: brightness(0.96);
     }
 
     50% {
@@ -328,17 +319,9 @@
     border-radius:
         999px !important;
 
-    box-shadow:
-        0 0 6px rgba(114, 242, 187, 0.14),
-        inset 0 0 4px rgba(255,255,255,0.04)
-        !important;
-
-    text-shadow:
-        none !important;
-
-    animation:
-        tokyoBadgePulse 3.2s infinite ease-in-out
-        !important;
+    box-shadow: 0 0 6px rgba(114, 242, 187, 0.14), inset 0 0 4px rgba(255,255,255,0.04) !important;
+    text-shadow: none !important;
+    animation: tokyoBadgePulse 3.2s infinite ease-in-out !important;
 
     transition:
         background 0.2s ease,
@@ -376,8 +359,7 @@
 
     50% {
 
-        opacity:
-            1;
+        opacity: 1;
 
         filter:
             drop-shadow(0 0 10px rgba(255, 85, 116, 0.42))
@@ -626,9 +608,9 @@ background-color: red !important;
 }
 
 .vc-addon-card:not(.vc-settings-quickActions-card):not(.vc-settings-quickActions-pill):hover {
-    border-color: #81fca6 !important; /* Maximálny jas vašej mätovej */
+    border-color: #81fca6 !important;
     box-shadow: 0 0 20px rgba(129, 252, 166, 0.25), inset 0 0 15px rgba(129, 252, 166, 0.1);
-    transform: translateY(-2px); /* Jemné nadvihnutie karty */
+    transform: translateY(-2px);
 }
 
 /* === VENCORD SETTINGS - WARNING === */
@@ -673,7 +655,7 @@ background-color: red !important;
 
 /* === VENCORD SETTINGS - THEME CARDS === */
 .vc-settings-quickActions-card {
-    background-color: var(--tokyo-midnight-bg-panels) !important; /* Changed background to "panels" color instead of rely on single global color */
+    background-color: var(--tokyo-midnight-bg-panels) !important;
     border: 2px solid var(--tokyo-midnight-black) !important;
 }
 
@@ -885,7 +867,7 @@ border: currentColor;
     color: #000000 !important;
     font-weight: 700 !important;
     letter-spacing: .03em !important;
-    background: var(--tokyo-midnight-ruby-crimson) !important; /* DEFAULT BG: Rich Ruby Crimson so it's fully visible */
+    background: var(--tokyo-midnight-ruby-crimson) !important;
     box-shadow: none !important;
     transition: filter .24s ease, background .24s ease !important;
 }
@@ -919,7 +901,6 @@ border: currentColor;
     text-shadow: none !important;
 }
 
-/* KEYFRAMES */
 @keyframes tokyoRubyPrestigeShine { 0% { left: -140%; } 16% { left: 180%; } 100% { left: 180%; } 
 }
 
@@ -942,7 +923,7 @@ border: currentColor;
     color: #3fff75 !important;
     border: 1px solid rgba(129,252,166,.14) !important;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(92, 245, 151, 0.275);;
+    box-shadow: 0 0 10px rgba(92, 245, 151, 0.275);
 }
 
 /* STATUS COLORS */
@@ -1289,7 +1270,7 @@ color: var(--tokyo-midnight-icons);
     box-shadow: 0 0 12px var(--tokyo-midnight-shadow-glow) !important;
 }
 
-/* === EXTRA STRONG DRAG EFFECT === */
+/* === DRAG EFFECT === */
 
 [class*="scrollerBase_"]::-webkit-scrollbar-thumb:active {
     box-shadow: 0 0 18px rgba(26,212,94,.72) !important;
@@ -1469,7 +1450,7 @@ body:has(.activityPanel__5e434) nav.guilds__5e434 {
 }
 
 /* ========================== */
-/* 			CHANNELS 		  */
+/* 			    CHANNELS 		      */
 /* ========================== */
 
 .icon__2ea32,
@@ -1481,8 +1462,7 @@ body:has(.activityPanel__5e434) nav.guilds__5e434 {
 .wrapper__2ea32:hover .link__2ea32,
 .wrapper__2ea32:hover .name__2ea32 {
     color:
-        var(--tokyo-midnight-channel-text-hover)
-        !important;
+        var(--tokyo-midnight-channel-text-hover) !important;
 }
 
 /* === CHANNEL TITLE HEADER - SEPARATOR === */
@@ -1599,7 +1579,7 @@ border-radius: 8px;
     border: 1px solid rgba(90,250,162,.14) !important;
     border-radius: 10px !important;
     padding: 8px !important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
 }
 
 /* == VERSION === */
@@ -1713,8 +1693,6 @@ svg.text__0d0f9.boostCountText__0d0f9 {
     box-shadow:
         var(--tokyo-midnight-border-shadow),
         var(--tokyo-midnight-shadow-glow);
-
-    overflow: hidden;
 }
 
 /* === MENU ITEMS === */
@@ -1788,13 +1766,6 @@ svg.text__0d0f9.boostCountText__0d0f9 {
 .checkboxIndicator__714a9 {
 
     color: var(--tokyo-midnight-icons) !important;
-}
-
-/* === CONTEXT MENU POSITION FIX === */
-
-.menu_c1e9c4:not(.scroller_c1e9c4) {
-
-   transform: translateX(-50px);
 }
 
 /* === VENCORD SPECIAL CARD === */
@@ -1901,7 +1872,7 @@ svg.text__0d0f9.boostCountText__0d0f9 {
 
 /* === DM ITEM ICONS === */
 .channel__972a0:not(.dm__972a0) svg {
-color: var(--tokyo-midnight-green)
+color: var(--tokyo-midnight-green);
 }
 
 /* === SHOP - NEW BADGE === */
@@ -2004,15 +1975,14 @@ filter: drop-shadow(0 0 10px rgba(219, 10, 42, 0.856));
 }
 
 /* === SEARCH - SELECTED TAG BACKGROUND === */
-/* Zmení pozadie celého štítku (napr. from: snajper.exe) */
 [class*="searchTag_"] {
-    background-color: var(--tokyo-midnight-bg-panels) !important; /* Prípadne sem daj inú premennú */
-    border: 1px solid var(--tokyo-midnight-border); /* Voliteľné: pridá jemný okraj */
+    background-color: var(--tokyo-midnight-bg-panels) !important;
+    border: 1px solid var(--tokyo-midnight-border);
 }
 
 /* === SEARCH - RECENT SEARCH === */
 .container__16eb0 .autocompletePillContainer__971b5 {
-    background-color: rgba(71, 205, 30, 0.458) !important; /* Sem daj svoje pozadie */
+    background-color: rgba(71, 205, 30, 0.458) !important;
     border-radius: 8px;
 }
 
@@ -2057,7 +2027,6 @@ filter: drop-shadow(0 0 10px rgba(219, 10, 42, 0.856));
 
 
    /* === ON STATE === */
-
 
 .vc-switch-container.vc-switch-checked {
     background-color: var(--tokyo-midnight-green)!important;
@@ -2239,7 +2208,7 @@ background-color: var(--tokyo-midnight-icons);
 
 /* === MEMBER LIST - MEMBER CARD (NO NITRO NAMEPLATES! === */
 .childContainer__91a9d:not(.nameplated__91a9d) {
-  background-color: #0f0f18; /* Changes background for Non-Nitro Nameplates to Dark-Blue Color */
+  background-color: #0f0f18; /* Changes background for Non-Nitro Nameplates to Midnight Color */
 }
 
 /* === MEMBER LIST - MEMBER CARD TEXT === */
@@ -2313,14 +2282,14 @@ background-color: var(--tokyo-midnight-icons);
 }
 
 /* === MESSAGE REACTION MENU === */
-.popover_f84418.popover_f84418 {
+.popover_f84418 {
   background-color: var(--tokyo-midnight-bg-sidebars);
   border: 2px solid var(--tokyo-midnight-green);
   filter: drop-shadow(0 0 10px rgba(29, 202, 58, 0.485));
   }
 
   /* === MESSAGE REACTION MENU - HOVER === */
-.popover_f84418.popover_f84418:hover {
+.popover_f84418:hover {
   background-color: var(--tokyo-midnight-bg-sidebars);
   border: 2px solid var(--tokyo-midnight-green2);
   filter: drop-shadow(0 0 10px rgba(10, 167, 44, 0.558));
@@ -2419,7 +2388,7 @@ border: 1px solid #2b2a3a !important;
 
 /* === FORUM - POST TITLE === */
 .postTitleText_faa96b {
-color: var(--tokyo-midnight-text-header) !important
+color: var(--tokyo-midnight-text-header) !important;
 }
 
 /* === FORUM = POST DESCRIPTION */
@@ -2458,7 +2427,7 @@ color: var(--tokyo-midnight-text-normal);
 }
 
 /* ===REPLY BAR - CLOSE BUTTON === */
-[class*="closeIcon"] {
+.threadSuggestionBar__841c8 [class*="closeIcon"] {
   color: var(--tokyo-midnight-red);
 }
 
@@ -2500,7 +2469,7 @@ border-radius: 20px;
 }
 
 /* ========================== */
-/* TOKYO MIDNIGHT CHECKBOXES */
+/*        CHECKBOXES          */
 /* ========================== */
 
 /* CHECKED */
@@ -2567,7 +2536,7 @@ background: #18191e;
 }
 
 .container__0d0f9:hover .progress__0d0f9 {
-  background: var(--tokyo-midnight-opal) !important
+  background: var(--tokyo-midnight-opal) !important;
 }
 
 .progressContainer__0d0f9 {
@@ -2585,7 +2554,7 @@ fill: var(--tokyo-midnight-black);
     border-right: 1px solid rgb(49, 173, 49);
     border-bottom: 1px solid rgb(49, 173, 49);
     border-bottom-left-radius: 10px !important;
-    border-bottom-right-radius: 10px !important
+    border-bottom-right-radius: 10px !important;
 }
 
 /* === PINNED MESSAGES - WRAPPER === */
@@ -2595,7 +2564,7 @@ fill: var(--tokyo-midnight-black);
 }
 
 /* === PINNED MESSAGES = ATTACHMENTS === */
-.file__0ccae { /* If the pinned message contains the attachements (files) it will change to the colors below */
+.file__0ccae { /* If the pinned message contains the attachements (files) it will change to the color of the panels */
     background-color: var(--tokyo-midnight-bg-panels) !important;
     border: 1px solid rgba(133, 226, 140, 0.682);
 }
@@ -2835,7 +2804,7 @@ text-shadow: 0 0 10px rgba(51, 215, 95, 0.878);
 /* === CREATE SERVER - CLOSE BUTTON === */
 .modal__024d4 [class*="closeIcon"] {
 background-color: color-mix( in srgb, var(--tokyo-midnight-warning) 80%, transparent);
-  color: rgb(98, 2, 28) !important
+  color: rgb(98, 2, 28) !important;
 }
 
 .modal__024d4 .buttonChildrenWrapper_a22cb0 {
@@ -2912,7 +2881,7 @@ background-color: color-mix( in srgb, var(--tokyo-midnight-warning) 80%, transpa
 }
 
 .customScroller__23e6b {
-  background-color: var(--tokyo-midnight-bg-sidebars) !important
+  background-color: var(--tokyo-midnight-bg-sidebars) !important;
 }
 
 .container_d8f25b  {
@@ -3211,7 +3180,7 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     background-color: rgb(20, 20, 24) !important;
     border-top: 2px solid rgb(166, 255, 158);
     border-top-left-radius: 8px !important;
-    border-top-right-radius: 8px !important
+    border-top-right-radius: 8px !important;
 }
 
 /* === SERVER BOOST - LEVEL CARDS === */
@@ -3230,7 +3199,7 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
 .container__5573a.card__823e1
 .text-sm\/medium_cf4812 {
     color: #030014 !important;
-    font-weight: 600 !important
+    font-weight: 600 !important;
 }
 
 /* === SERVER BOOSTS - SIDEBAR === */
@@ -3295,7 +3264,7 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
     background-color: transparent !important;
 }
 
-.emojiSection_d5cd2d .overflow_b0dfc2 { /* Changes the color of the emoji name only inside this pop up */
+.emojiSection_d5cd2d .overflow_b0dfc2 { /* Changes the color of the emoji name, only inside this pop up */
     color: rgb(41, 218, 53) !important;
     font-weight: 800;
 }
@@ -3428,7 +3397,7 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
 
     /* &::before {content: '✎ edited on (';} */
     /* &::after {content: ')';} */
-    &::before {content: '✎ ';}
+    &::before {content: '✎ Edited: ';}
   }
 }
 
@@ -3667,7 +3636,7 @@ border-top-right-radius: 30px; /* makes the right top border unusually rounder a
 
 /* === SUMMARIES - TOPIC TITLE === */
 .topicsPillTextTitle__0f481 {
-    color: rgb(88, 238, 86) !important
+    color: rgb(88, 238, 86) !important;
 }
 
 /* === SUMMARIES - ARROW === */
@@ -3938,7 +3907,7 @@ a.anchor_edefb8:active * {
 .container__34c2c {
     background: rgb(14, 15, 23);
     border: 1px solid rgba(47, 201, 63, 0.266);
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .divider_ee23ac {
@@ -4039,7 +4008,7 @@ a.anchor_edefb8:active * {
 
 .popover_d6f39b {
     background: linear-gradient(90deg, #000117 0%, #030016 100%) !important;
-    border: 1px solid rgba(158, 248, 170, 0.425) !important
+    border: 1px solid rgba(158, 248, 170, 0.425) !important;
 }
 
 .stepStatus_a68543.completed_a68543 {
