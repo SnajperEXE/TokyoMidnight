@@ -712,7 +712,7 @@ border: 2px dotted var(--tokyo-midnight-border) !important;
 }
 
 /* === SLOWMODE GRADIENT THINGY === */
-.chatGradientBase__36d07:not(.inTextChannel_b88801)not(.base_b88801) {
+.chatGradientBase__36d07:not(.inTextChannel_b88801):not(.base_b88801) {
 
     background: radial-gradient( rgba(7,226,87,.28) 0%, rgba(8, 224, 58, 0.208) 38%, transparent 75% ) !important;
     filter: blur(20px);
