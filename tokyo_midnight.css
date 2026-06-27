@@ -707,7 +707,6 @@ border: 2px dotted var(--tokyo-midnight-border) !important;
     background: rgba(8,10,14,.82) !important;
     border: 2px solid var(--tokyo-midnight-border-strong);
     border-radius: 12px;
-    backdrop-filter: blur(14px);
     box-shadow: 0 0 14px rgba(143,255,209,.06), inset 0 0 10px rgba(143,255,209,.025);
 }
 
