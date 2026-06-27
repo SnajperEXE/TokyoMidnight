@@ -1682,16 +1682,9 @@ svg.text__0d0f9.boostCountText__0d0f9 {
 .menu_c1e9c4 {
 
     background: var(--tokyo-midnight-bg-sidebars) !important;
-
     border: 1px solid var(--tokyo-midnight-border-strong) !important;
-
     border-radius: 14px !important;
-
-    backdrop-filter: blur(14px);
-
-    box-shadow:
-        var(--tokyo-midnight-border-shadow),
-        var(--tokyo-midnight-shadow-glow);
+    box-shadow: var(--tokyo-midnight-border-shadow), var(--tokyo-midnight-shadow-glow);
 }
 
 /* === MENU ITEMS === */
