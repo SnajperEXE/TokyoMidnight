@@ -1532,9 +1532,9 @@ border-radius: 8px;
 
 /* === USER SETTINGS - MENU HOVER === */
 .item_caf372:hover:not(.active_caf372):not(.destructive_caf372) {
-    background-color: var(--tokyo-midnight-green) !important;
-    color: var(--tokyo-midnight-black);
-
+  background-color: #010318 !important;
+  color: #90e990;
+  border: 1px solid #c3f8c899;
 }
 
 /* === USER SETTINGS - SUBMENU HOVER === */
