@@ -4164,3 +4164,22 @@ a.anchor_edefb8:active * {
     border: 2px dotted rgb(24, 23, 74);
     border-radius: 10px;
 }
+
+.usersList_a72ffc {
+    background-color: rgb(6, 5, 9);
+    border-left: 2px solid rgb(127, 227, 139);
+    border-right: 2px solid rgb(127, 227, 139);
+    border-bottom: 2px solid rgb(127, 227, 139);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.header_a72ffc {
+    background-color: rgb(7, 7, 16);
+    border-left: 2px solid rgb(127, 227, 139);
+    border-right: 2px solid rgb(127, 227, 139);
+    border-top: 2px solid rgb(127, 227, 139);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px dashed rgb(42, 41, 50);
+}
