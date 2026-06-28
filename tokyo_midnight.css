@@ -511,9 +511,9 @@
 
 /* === PROFLE SETTINGS - MENU === */
 .item_caf372.active_caf372 {
-  background-color: #2e2e2e;
-  color: #a4fcaf;
-  box-shadow: 0 0 10px 5px rgb(4 48 8 / 37%);
+    background-color: #058e1b;
+    color: #000018;
+    box-shadow: 0 0 10px 5px rgb(5 142 27 / 31%);
 }
 
 /* === PROFILE SETTINGS = SUBMENU === */
@@ -1532,9 +1532,9 @@ border-radius: 8px;
 
 /* === USER SETTINGS - MENU HOVER === */
 .item_caf372:hover:not(.active_caf372):not(.destructive_caf372) {
-  background-color: #010318 !important;
-  color: #90e990;
-  border: 1px solid #c3f8c899;
+    background-color: #42d039e3 !important;
+    color: #040722;
+    border: 1px solid #c3f8c899;
 }
 
 /* === USER SETTINGS - SUBMENU HOVER === */
@@ -2200,7 +2200,8 @@ background-color: var(--tokyo-midnight-icons);
 
 /* === MEMBER LIST - MEMBER CARD (NO NITRO NAMEPLATES! === */
 .childContainer__91a9d:not(.nameplated__91a9d) {
-  background-color: #1d1d3c; /* Changes background for Non-Nitro Nameplates */
+    background-color: #0a0a17;
+    border: 1px solid #111123;
 }
 
 /* === MEMBER LIST - MEMBER CARD TEXT === */
@@ -4182,4 +4183,33 @@ a.anchor_edefb8:active * {
 
 .member_c8ffbb {
     background-color: rgb(1, 3, 27) !important;
+}
+
+.executedCommand_c19a55 .appLauncherOnboardingCommandName_c19a55 {
+    background: linear-gradient(90deg, #10480b 0%, #1eb439 100%);
+    color: rgb(0, 6, 28);
+}
+
+.executedCommand_c19a55 .appLauncherOnboardingCommandName_c19a55:hover {
+    background: linear-gradient(90deg, #1eb439 0%, #10480b 100%);
+    color: rgb(2, 9, 35);
+}
+
+.addButton__29444.forceVisible__29444 {
+    color: rgb(85, 210, 94);
+    box-shadow: 0 0 10px rgba(109, 219, 120, 0.347);
+    background-color: #03041d;
+}
+
+.addButtonIcon__29444:hover {
+    color: rgb(46, 185, 55);
+
+}
+
+.truncated_c9d15c:hover {
+    color: rgb(151, 246, 149) !important;
+}
+
+.truncated_c9d15c {
+    color: rgb(40, 245, 36) !important;
 }
